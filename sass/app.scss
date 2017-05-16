@@ -1,0 +1,75 @@
+// Settings
+$inuit-webfont-path : '//fonts/';
+@import "px-colors-design/_settings.colors.scss";
+
+// Tools
+
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+@import "px-helpers-design/_generic.helpers.scss";
+
+// Base
+@import "px-flexbox-design/_base.flexbox.scss";
+@import "px-viewport-design/_base.viewport.scss";
+$inuit-enable-input--large : true;
+@import 'px-forms-design/_base.forms.scss';
+
+// Meta
+
+// Objects
+
+// Component
+.app {
+  margin: 1rem;
+  position: relative;
+}
+
+.app__quit {
+  position: fixed;
+  top: .75rem;
+  right: 1rem;
+  a {
+    color: $gray6;
+    font-size: .9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 0;
+    margin: 0;
+  }
+}
+
+.app__header {
+  p { margin: 0 }
+
+  .app__header__logo {
+  }
+  .app__header__description {
+    margin-top: .25rem;
+    color: $gray6;
+  }
+}
+
+.app__search {
+  margin-top: .75rem;
+  .app__search__input {
+    font-size: 1.2rem;
+  }
+  .app__search__redesigned {
+    margin-top: .75rem;
+  }
+  .app__search__redesigned span {
+    position: relative;
+    top: -0.35rem;
+    padding-left: .5rem;
+  }
+}
+
+.app__results {
+  margin-top: .75rem;
+}
+
+// Trumps
+@import "inuit-clearfix/_trumps.clearfix.scss";
+@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+@import "px-widths-responsive-design/_trumps.widths-responsive.scss";

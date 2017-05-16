@@ -1,0 +1,30 @@
+<script>
+  console.log("Loaded.")
+  const ipcRenderer = require('electron').ipcRenderer;
+  const ee = window.electronEvent = {};
+
+  ee.sendEvent = function sendEvent(name, payload) {
+    ipcRenderer.send(name, payload);
+  }
+
+  ee.copyToClipboard = function copyToClipboard(text) {
+    // Send event to electron main process
+    ee.sendEvent('copy-to-clipboard', text);
+    // Send window event for the app to listen to
+    const winEvt = new CustomEvent('copy-to-clipboard', {detail:{text:text}});
+    window.dispatchEvent(winEvt);
+    console.log(`Copied text to clipboard: ${text}`);
+  }
+
+  ee.quit = function quit() {
+    ee.sendEvent('quit');
+  }
+
+  ee.handleWindowShown = function handleWindowShown() {
+    const winEvt = new CustomEvent('window-shown');
+    window.dispatchEvent(winEvt);
+    console.log('Window shown, focusing input.');
+  }
+
+  ipcRenderer.on('after-show', ee.handleWindowShown);
+</script>

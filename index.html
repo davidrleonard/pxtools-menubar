@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>px-menubar</title>
+
+  <!-- Polymer settings -->
+  <script>
+    window.Polymer = {
+      dom: 'shadow'
+    };
+  </script>
+
+  <!-- App shell imports -->
+  <link rel="import" href="bower_components/polymer/polymer.html" />
+  <link rel="import" href="bower_components/px-theme/px-theme-styles.html" />
+  <style include="px-theme-styles" is="custom-style"></style>
+
+  <!-- App entrypoint -->
+  <link rel="import" href="app/px-menubar.html">
+
+  <!-- App shell styles -->
+  <style>
+    html, body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <px-menubar></px-menubar>
+</body>
+</html>

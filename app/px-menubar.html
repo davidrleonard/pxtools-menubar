@@ -1,0 +1,177 @@
+<!-- Load dependencies -->
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html"/>
+<link rel="import" href="../bower_components/px-toggle/px-toggle.html"/>
+<link rel="import" href="../lib/electron-event-helpers.html">
+<link rel="import" href="../lib/fuse-import.html"/>
+
+<!-- Load app elements -->
+<link rel="import" href="px-menubar-result-color.html"/>
+
+<!-- Import style modules -->
+<link rel="import" href="../css/app-styles.html"/>
+
+<dom-module id="px-menubar">
+  <template>
+    <style include="app-styles">
+      .app__notification {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #1479C9;
+        color: white;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+    </style>
+    <iron-ajax url="../data/colors.json" last-response="{{rawList}}" auto></iron-ajax>
+
+    <section class="app">
+      <div class="app__quit">
+        <a href="#" on-tap="handleQuit">Quit</a>
+      </div>
+
+      <!-- Header -->
+      <div class="app__header">
+        <p class="app__header__logo">Predix UI QuickSearch</p>
+        <p class="app__header__description">Search for colors by name, hex, or RGB.</p>
+      </div>
+
+      <!-- Search -->
+      <div class="app__search">
+        <input
+            id="search"
+            class="text-input app__search__input"
+            type="text"
+            placeholder="$gray10 or rgb(1,2,3) or #000abc"
+            value="{{searchText::input}}">
+        <div class="app__search__redesigned">
+          <px-toggle size="small" checked="{{searchRedesigned}}"></px-toggle>
+          <span>Redesigned colors</span>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="app__results">
+        <template is="dom-repeat" items="{{filteredList}}">
+          <px-menubar-result-color name="{{item.name}}" rgb="{{item.rgb}}" hex="{{item.hex}}" search-text="{{searchText}}"></px-menubar-result-color>
+        </template>
+        <template is="dom-if" if="{{isEmpty(searchText)}}">
+          <p>Start typing to see results.</p>
+        </template>
+      </div>
+
+      <div class="app__notification" id="notifications">
+        <p>{{notificationText}}</p>
+      </div>
+    </section>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar',
+    properties: {
+      searchText: {
+        type: String,
+        value: ''
+      },
+      rawList: {
+        type: Array
+      },
+      filteredList: {
+        type: Array,
+        computed: 'getFilteredList(rawList, searchText, searchRedesigned)'
+      },
+      searchRedesigned: {
+        type: Boolean,
+        value: false
+      },
+      notificationText: {
+        type: String,
+        observer: 'showNotification'
+      }
+    },
+
+    get fuseOptions() {
+      return {
+        shouldSort: true,
+        tokenize: true,
+        threshold: 0.6,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          "name",
+          "rgb",
+          "hex"
+        ]
+      }
+    },
+
+    created() {
+      this.search = new Fuse()
+    },
+
+    attached() {
+      this.listen(window, 'copy-to-clipboard', 'handleCopied');
+      this.listen(window, 'window-shown', 'focusInput');
+      this.focusInput();
+    },
+
+    detached() {
+      this.unlisten(window, 'copy-to-clipboard', 'handleCopied');
+      this.unlisten(window, 'window-shown', 'focusInput');
+    },
+
+    focusInput() {
+      this.$.search.focus();
+    },
+
+    isEmpty(text) {
+      return text.length === 0;
+    },
+
+    searchItems(items, str) {
+      const fuse = new Fuse(items, this.fuseOptions);
+      return fuse.search(str);
+    },
+
+    getFilteredList(rawList, searchText, searchRedesigned) {
+      if (searchText === "") {
+        return [];
+      }
+      const filteredItems = rawList.filter(item=>searchRedesigned ? item.redesigned : !item.redesigned);
+      return this.searchItems(filteredItems, searchText);
+    },
+
+    handleCopied(evt) {
+      if (evt.detail && evt.detail.text) {
+        this.notificationText = `Copied ${evt.detail.text} to clipboard.`
+      }
+    },
+
+    handleQuit(evt) {
+      electronEvent.quit();
+    },
+
+    showNotification(newText, oldText) {
+      if (typeof newText === 'string' && newText.length && !this._notificationVisible) {
+        this.debounce('show-notification', function(){
+          this._notificationVisible = true;
+          this.$.notifications.style.opacity = 1;
+        }, 1);
+        this.debounce('hide-notification', function(){
+          this.$.notifications.style.opacity = 0;
+          this._notificationVisible = false;
+        }, 3000);
+      }
+    }
+  });
+</script>

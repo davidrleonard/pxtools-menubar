@@ -1,0 +1,27 @@
+{
+  "name": "example-menubar-app",
+  "description": "example menubar electron app",
+  "main": "main.js",
+  "authors": [
+    "David Leonard <davidrobertleonard@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.9.1",
+    "px-theme": "^2.0.4",
+    "iron-ajax": "^1.4.4",
+    "px-toggle": "^1.0.5"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.4",
+    "px-forms-design": "^1.2.3"
+  }
+}
