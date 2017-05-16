@@ -1,7 +1,7 @@
 {
-  "name": "example-menubar-app",
-  "version": "1.0.0",
-  "description": "example menubar electron app",
+  "name": "pxtools-menubar",
+  "version": "0.1.0",
+  "description": "Simple menubar app that helps you search/copy Predix UI color values",
   "dependencies": {
     "menubar": "*"
   },
