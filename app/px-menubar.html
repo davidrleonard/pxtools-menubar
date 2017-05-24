@@ -74,10 +74,6 @@
     </style>
 
     <section class="app">
-      <!-- <div class="app__quit">
-        <a href="#" on-tap="handleQuit">Quit</a>
-      </div> -->
-
       <!-- Header -->
       <iron-selector
           class="app__header"
@@ -87,7 +83,7 @@
           selected-attribute="selected">
         <a class="app__header__tab" name="colors">Colors</a>
         <a class="app__header__tab" name="icons">Icons</a>
-        <a class="app__header__tab app__header__tab--quit">Quit</a>
+        <a class="app__header__tab app__header__tab--quit" on-tap="handleQuit">Quit</a>
       </iron-selector>
 
       <div class="app__main">

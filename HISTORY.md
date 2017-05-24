@@ -1,3 +1,8 @@
+0.2.1
+===============
+* Fix regression that made it impossible to quit the app
+* Update `README.md` with relevant information
+
 0.2.0
 ===============
 * Allows users to search for Predix UI icons by name
