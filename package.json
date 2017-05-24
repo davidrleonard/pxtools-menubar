@@ -1,6 +1,6 @@
 {
   "name": "pxtools-menubar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple menubar app that helps you search/copy Predix UI color values",
   "dependencies": {
     "menubar": "*"
