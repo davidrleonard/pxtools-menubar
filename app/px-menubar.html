@@ -2,11 +2,14 @@
 <link rel="import" href="../bower_components/polymer/polymer.html"/>
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html"/>
 <link rel="import" href="../bower_components/px-toggle/px-toggle.html"/>
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html"/>
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html"/>
 <link rel="import" href="../lib/electron-event-helpers.html">
 <link rel="import" href="../lib/fuse-import.html"/>
 
 <!-- Load app elements -->
-<link rel="import" href="px-menubar-result-color.html"/>
+<link rel="import" href="px-menubar-colors.html">
+<link rel="import" href="px-menubar-icons.html">
 
 <!-- Import style modules -->
 <link rel="import" href="../css/app-styles.html"/>
@@ -29,43 +32,73 @@
         opacity: 0;
         transition: opacity 1s ease-in-out;
       }
+
+      .app__header {
+        display: flex;
+        background-color: var(--pxm-header-background);
+        box-shadow: var(--pxm-header-box-shadow);
+      }
+      .app__header__tab {
+        display: block;
+        padding: .75rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: var(--pxm-header-font-color);
+      }
+      .app__header__tab:hover {
+        color: var(--pxm-header-font-color);
+        background-color: var(--pxm-header-background--hover);
+      }
+      .app__header__tab[selected] {
+        background-color: var(--pxm-header-background--selected);
+        position: relative;
+      }
+      .app__header__tab[selected]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--pxm-header-background--selected-stripe);
+      }
+      .app__header__tab--quit {
+        justify-self: flex-end;
+      }
+
+      .app__main {
+        margin: 1rem;
+        position: relative;
+      }
     </style>
-    <iron-ajax url="../data/colors.json" last-response="{{rawList}}" auto></iron-ajax>
 
     <section class="app">
-      <div class="app__quit">
+      <!-- <div class="app__quit">
         <a href="#" on-tap="handleQuit">Quit</a>
-      </div>
+      </div> -->
 
       <!-- Header -->
-      <div class="app__header">
-        <p class="app__header__logo">Predix UI QuickSearch</p>
-        <p class="app__header__description">Search for colors by name, hex, or RGB.</p>
+      <iron-selector
+          class="app__header"
+          attr-for-selected="name"
+          selected="{{active}}"
+          fallback-selection="colors"
+          selected-attribute="selected">
+        <a class="app__header__tab" name="colors">Colors</a>
+        <a class="app__header__tab" name="icons">Icons</a>
+        <a class="app__header__tab app__header__tab--quit">Quit</a>
+      </iron-selector>
+
+      <div class="app__main">
+        <iron-pages
+            selected="[[active]]"
+            attr-for-selected="name">
+          <px-menubar-colors name="colors"></px-menubar-colors>
+          <px-menubar-icons name="icons"></px-menubar-icons>
+        </iron-pages>
       </div>
 
-      <!-- Search -->
-      <div class="app__search">
-        <input
-            id="search"
-            class="text-input app__search__input"
-            type="text"
-            placeholder="$gray10 or rgb(1,2,3) or #000abc"
-            value="{{searchText::input}}">
-        <div class="app__search__redesigned">
-          <px-toggle size="small" checked="{{searchRedesigned}}"></px-toggle>
-          <span>Redesigned colors</span>
-        </div>
-      </div>
-
-      <!-- Results -->
-      <div class="app__results">
-        <template is="dom-repeat" items="{{filteredList}}">
-          <px-menubar-result-color name="{{item.name}}" rgb="{{item.rgb}}" hex="{{item.hex}}" search-text="{{searchText}}"></px-menubar-result-color>
-        </template>
-        <template is="dom-if" if="{{isEmpty(searchText)}}">
-          <p>Start typing to see results.</p>
-        </template>
-      </div>
 
       <div class="app__notification" id="notifications">
         <p>{{notificationText}}</p>
@@ -77,52 +110,19 @@
   Polymer({
     is: 'px-menubar',
     properties: {
-      searchText: {
-        type: String,
-        value: ''
-      },
-      rawList: {
-        type: Array
-      },
-      filteredList: {
-        type: Array,
-        computed: 'getFilteredList(rawList, searchText, searchRedesigned)'
-      },
-      searchRedesigned: {
-        type: Boolean,
-        value: false
-      },
       notificationText: {
         type: String,
         observer: 'showNotification'
       }
     },
 
-    get fuseOptions() {
-      return {
-        shouldSort: true,
-        tokenize: true,
-        threshold: 0.6,
-        location: 0,
-        distance: 100,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
-        keys: [
-          "name",
-          "rgb",
-          "hex"
-        ]
-      }
-    },
-
     created() {
-      this.search = new Fuse()
+      this.search = new Fuse();
     },
 
     attached() {
       this.listen(window, 'copy-to-clipboard', 'handleCopied');
       this.listen(window, 'window-shown', 'focusInput');
-      this.focusInput();
     },
 
     detached() {
@@ -130,30 +130,9 @@
       this.unlisten(window, 'window-shown', 'focusInput');
     },
 
-    focusInput() {
-      this.$.search.focus();
-    },
-
-    isEmpty(text) {
-      return text.length === 0;
-    },
-
-    searchItems(items, str) {
-      const fuse = new Fuse(items, this.fuseOptions);
-      return fuse.search(str);
-    },
-
-    getFilteredList(rawList, searchText, searchRedesigned) {
-      if (searchText === "") {
-        return [];
-      }
-      const filteredItems = rawList.filter(item=>searchRedesigned ? item.redesigned : !item.redesigned);
-      return this.searchItems(filteredItems, searchText);
-    },
-
     handleCopied(evt) {
       if (evt.detail && evt.detail.text) {
-        this.notificationText = `Copied ${evt.detail.text} to clipboard.`
+        this.notificationText = `Copied ${evt.detail.text} to clipboard.`;
       }
     },
 

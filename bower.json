@@ -16,12 +16,16 @@
   ],
   "dependencies": {
     "polymer": "^1.9.1",
-    "px-theme": "^2.0.4",
+    "px-theme": "^3.0.0",
     "iron-ajax": "^1.4.4",
-    "px-toggle": "^1.0.5"
+    "px-toggle": "^2.0.0",
+    "iron-pages": "^1.0.0",
+    "iron-selector": "^1.0.0",
+    "px-polymer-font-awesome": "^2.0.0",
+    "iron-icon": "^1.0.0"
   },
   "devDependencies": {
-    "px-starter-kit-design": "^0.7.4",
-    "px-forms-design": "^1.2.3"
+    "px-starter-kit-design": "^1.0.0",
+    "px-forms-design": "^2.0.0"
   }
 }

@@ -1,0 +1,61 @@
+<!-- Load dependencies -->
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html"/>
+<link rel="import" href="../bower_components/px-polymer-font-awesome/px-icon-set.html"/>
+<link rel="import" href="../lib/electron-event-helpers.html">
+
+<!-- Import style modules -->
+<link rel="import" href="../css/app-styles.html"/>
+
+<dom-module id="px-menubar-icons-result">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        height: 110px;
+        --iron-icon-width: 50px;
+        --iron-icon-height: 50px;
+        padding: 8px;
+      }
+      :host(:hover) {
+        background-color: var(--pxm-icons-result-background--hover);
+      }
+      .result__icon {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .result__name {
+        font-size: .88rem;
+      }
+    </style>
+
+    <div class="result__icon">
+      <iron-icon icon="{{name}}"></iron-icon>
+    </div>
+    <div class="result__name">
+      {{name}}
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar-icons-result',
+    properties: {
+      name: String,
+    },
+
+    listeners: {
+      'tap' : '_handleSelfTapped'
+    },
+
+    _handleSelfTapped(evt) {
+      electronEvent.copyToClipboard(this.name);
+    }
+  });
+</script>

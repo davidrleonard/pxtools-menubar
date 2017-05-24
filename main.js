@@ -6,8 +6,7 @@ const clipboard = electron.clipboard;
 const menubar = require('menubar');
 
 const mb = menubar({
-  'node-integration' : true,
-  showDockIcon: true
+  'node-integration' : true
 });
 
 mb.on('ready', function ready() {

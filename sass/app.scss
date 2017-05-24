@@ -20,56 +20,12 @@ $inuit-enable-input--large : true;
 // Objects
 
 // Component
-.app {
-  margin: 1rem;
-  position: relative;
+:host {
+  --pxm-header-font-color: $gray8;
+  --pxm-header-background: $gray2;
+  --pxm-header-background--hover: $gray4;
+  --pxm-header-background--selected: $white;
+  --pxm-header-background--selected-stripe: $select-default;
+  --pxm-header-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  --pxm-icons-result-background--hover: $gray3;
 }
-
-.app__quit {
-  position: fixed;
-  top: .75rem;
-  right: 1rem;
-  a {
-    color: $gray6;
-    font-size: .9rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 0;
-    margin: 0;
-  }
-}
-
-.app__header {
-  p { margin: 0 }
-
-  .app__header__logo {
-  }
-  .app__header__description {
-    margin-top: .25rem;
-    color: $gray6;
-  }
-}
-
-.app__search {
-  margin-top: .75rem;
-  .app__search__input {
-    font-size: 1.2rem;
-  }
-  .app__search__redesigned {
-    margin-top: .75rem;
-  }
-  .app__search__redesigned span {
-    position: relative;
-    top: -0.35rem;
-    padding-left: .5rem;
-  }
-}
-
-.app__results {
-  margin-top: .75rem;
-}
-
-// Trumps
-@import "inuit-clearfix/_trumps.clearfix.scss";
-@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
-@import "px-widths-responsive-design/_trumps.widths-responsive.scss";

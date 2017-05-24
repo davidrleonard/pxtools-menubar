@@ -1,0 +1,119 @@
+<!-- Load dependencies -->
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="px-menubar-icons-result.html"/>
+
+<!-- Import style modules -->
+<!-- <link rel="import" href="../css/app-styles.html"/> -->
+
+<dom-module id="px-menubar-icons">
+  <template>
+    <style include="app-styles">
+      .icons__search__input {
+        font-size: 1.2rem;
+      }
+      .icons__search__redesigned {
+        margin-top: .75rem;
+      }
+      .icons__search__redesigned span {
+        position: relative;
+        top: -0.35rem;
+        padding-left: .5rem;
+      }
+
+      .icons__results {
+        margin-top: .75rem;
+      }
+      .icons__results > px-menubar-icons-result {
+        width: 33%;
+        float: left;
+      }
+    </style>
+    <iron-ajax url="../data/icons.json" last-response="{{rawList}}" auto></iron-ajax>
+
+    <!-- Intro -->
+    <div class="icons__intro">
+      <h3>Search for icons</h3>
+    </div>
+
+    <!-- Search -->
+    <div class="icons__search">
+      <input
+          id="search"
+          class="text-input icons__search__input"
+          type="text"
+          placeholder="home, dashboards, alerts"
+          value="{{searchText::input}}">
+    </div>
+
+    <!-- Results -->
+    <div class="icons__results">
+      <template is="dom-repeat" items="{{filteredList}}">
+        <px-menubar-icons-result name="px:{{item.name}}"></px-menubar-icons-result>
+      </template>
+      <template is="dom-if" if="{{isEmpty(searchText)}}">
+        <p>Start typing to see results.</p>
+      </template>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar-icons',
+    properties: {
+      searchText: {
+        type: String,
+        value: ''
+      },
+      rawList: {
+        type: Array
+      },
+      filteredList: {
+        type: Array,
+        computed: 'getFilteredList(rawList, searchText)'
+      }
+    },
+
+    get fuseOptions() {
+      return {
+        shouldSort: true,
+        tokenize: true,
+        threshold: 0.6,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          "name"
+        ]
+      }
+    },
+
+    created() {
+      this.search = new Fuse()
+    },
+
+    attached() {
+      this.focusInput();
+    },
+
+    focusInput() {
+      this.$.search.focus();
+    },
+
+    isEmpty(text) {
+      return text.length === 0;
+    },
+
+    searchItems(items, str) {
+      const fuse = new Fuse(items, this.fuseOptions);
+      return fuse.search(str);
+    },
+
+    getFilteredList(rawList, searchText) {
+      if (searchText === "") {
+        return [];
+      }
+      return this.searchItems(rawList, searchText);
+    }
+  });
+</script>

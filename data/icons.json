@@ -1,0 +1,594 @@
+[
+  {
+    "name": "administration",
+    "keywords": ""
+  },
+  {
+    "name": "aircraft",
+    "keywords": ""
+  },
+  {
+    "name": "aircraft-engine",
+    "keywords": ""
+  },
+  {
+    "name": "airport",
+    "keywords": ""
+  },
+  {
+    "name": "alerts",
+    "keywords": ""
+  },
+  {
+    "name": "analysis",
+    "keywords": ""
+  },
+  {
+    "name": "analytics",
+    "keywords": ""
+  },
+  {
+    "name": "attribute",
+    "keywords": ""
+  },
+  {
+    "name": "asset",
+    "keywords": ""
+  },
+  {
+    "name": "automobile",
+    "keywords": ""
+  },
+  {
+    "name": "block",
+    "keywords": ""
+  },
+  {
+    "name": "boiler",
+    "keywords": ""
+  },
+  {
+    "name": "bug",
+    "keywords": ""
+  },
+  {
+    "name": "calendar",
+    "keywords": ""
+  },
+  {
+    "name": "cases",
+    "keywords": ""
+  },
+  {
+    "name": "catalog",
+    "keywords": ""
+  },
+  {
+    "name": "chat",
+    "keywords": ""
+  },
+  {
+    "name": "class",
+    "keywords": ""
+  },
+  {
+    "name": "condensor",
+    "keywords": ""
+  },
+  {
+    "name": "cooling-tower",
+    "keywords": ""
+  },
+  {
+    "name": "crane",
+    "keywords": ""
+  },
+  {
+    "name": "comment",
+    "keywords": ""
+  },
+  {
+    "name": "dashboard",
+    "keywords": ""
+  },
+  {
+    "name": "data-source",
+    "keywords": ""
+  },
+  {
+    "name": "deployment",
+    "keywords": ""
+  },
+  {
+    "name": "dev-ops",
+    "keywords": ""
+  },
+  {
+    "name": "digital-twin",
+    "keywords": ""
+  },
+  {
+    "name": "edge-device",
+    "keywords": ""
+  },
+  {
+    "name": "efficiency",
+    "keywords": ""
+  },
+  {
+    "name": "email",
+    "keywords": ""
+  },
+  {
+    "name": "fleet",
+    "keywords": ""
+  },
+  {
+    "name": "gas-line",
+    "keywords": ""
+  },
+  {
+    "name": "gas-turbine",
+    "keywords": ""
+  },
+  {
+    "name": "heat-rate",
+    "keywords": ""
+  },
+  {
+    "name": "hierarchy",
+    "keywords": ""
+  },
+  {
+    "name": "hrsg",
+    "keywords": ""
+  },
+  {
+    "name": "ingestion",
+    "keywords": ""
+  },
+  {
+    "name": "kpi",
+    "keywords": ""
+  },
+  {
+    "name": "lightbulb",
+    "keywords": ""
+  },
+  {
+    "name": "line",
+    "keywords": ""
+  },
+  {
+    "name": "locomotive",
+    "keywords": ""
+  },
+  {
+    "name": "log",
+    "keywords": ""
+  },
+  {
+    "name": "machine",
+    "keywords": ""
+  },
+  {
+    "name": "manufacturing",
+    "keywords": ""
+  },
+  {
+    "name": "message",
+    "keywords": ""
+  },
+  {
+    "name": "microservice",
+    "keywords": ""
+  },
+  {
+    "name": "orchestration",
+    "keywords": ""
+  },
+  {
+    "name": "order",
+    "keywords": ""
+  },
+  {
+    "name": "output",
+    "keywords": ""
+  },
+  {
+    "name": "phone",
+    "keywords": ""
+  },
+  {
+    "name": "pipeline",
+    "keywords": ""
+  },
+  {
+    "name": "plant",
+    "keywords": ""
+  },
+  {
+    "name": "product",
+    "keywords": ""
+  },
+  {
+    "name": "software",
+    "keywords": ""
+  },
+  {
+    "name": "rail-yard",
+    "keywords": ""
+  },
+  {
+    "name": "route",
+    "keywords": ""
+  },
+  {
+    "name": "server",
+    "keywords": ""
+  },
+  {
+    "name": "settings",
+    "keywords": ""
+  },
+  {
+    "name": "sms",
+    "keywords": ""
+  },
+  {
+    "name": "solar-panel",
+    "keywords": ""
+  },
+  {
+    "name": "spaces",
+    "keywords": ""
+  },
+  {
+    "name": "steam-turbine",
+    "keywords": ""
+  },
+  {
+    "name": "tag",
+    "keywords": ""
+  },
+  {
+    "name": "tag-group",
+    "keywords": ""
+  },
+  {
+    "name": "templates",
+    "keywords": ""
+  },
+  {
+    "name": "train",
+    "keywords": ""
+  },
+  {
+    "name": "truck",
+    "keywords": ""
+  },
+  {
+    "name": "user",
+    "keywords": ""
+  },
+  {
+    "name": "users",
+    "keywords": ""
+  },
+  {
+    "name": "version",
+    "keywords": ""
+  },
+  {
+    "name": "wind-turbine",
+    "keywords": ""
+  },
+  {
+    "name": "add",
+    "keywords": ""
+  },
+  {
+    "name": "arrow-down",
+    "keywords": ""
+  },
+  {
+    "name": "arrow-left",
+    "keywords": ""
+  },
+  {
+    "name": "arrow-right",
+    "keywords": ""
+  },
+  {
+    "name": "arrow-up",
+    "keywords": ""
+  },
+  {
+    "name": "alert",
+    "keywords": ""
+  },
+  {
+    "name": "calculator",
+    "keywords": ""
+  },
+  {
+    "name": "camera",
+    "keywords": ""
+  },
+  {
+    "name": "chart",
+    "keywords": ""
+  },
+  {
+    "name": "chevron-down",
+    "keywords": ""
+  },
+  {
+    "name": "chevron-left",
+    "keywords": ""
+  },
+  {
+    "name": "chevron-right",
+    "keywords": ""
+  },
+  {
+    "name": "chevron-up",
+    "keywords": ""
+  },
+  {
+    "name": "clock",
+    "keywords": ""
+  },
+  {
+    "name": "close",
+    "keywords": ""
+  },
+  {
+    "name": "collapse",
+    "keywords": ""
+  },
+  {
+    "name": "collapse-left",
+    "keywords": ""
+  },
+  {
+    "name": "confirm",
+    "keywords": ""
+  },
+  {
+    "name": "copy",
+    "keywords": ""
+  },
+  {
+    "name": "crosshairs",
+    "keywords": ""
+  },
+  {
+    "name": "csv",
+    "keywords": ""
+  },
+  {
+    "name": "delete",
+    "keywords": ""
+  },
+  {
+    "name": "desktop",
+    "keywords": ""
+  },
+  {
+    "name": "document",
+    "keywords": ""
+  },
+  {
+    "name": "download",
+    "keywords": ""
+  },
+  {
+    "name": "edit",
+    "keywords": ""
+  },
+  {
+    "name": "excel",
+    "keywords": ""
+  },
+  {
+    "name": "expand",
+    "keywords": ""
+  },
+  {
+    "name": "expand-right",
+    "keywords": ""
+  },
+  {
+    "name": "failure",
+    "keywords": ""
+  },
+  {
+    "name": "favorite",
+    "keywords": ""
+  },
+  {
+    "name": "filter",
+    "keywords": ""
+  },
+  {
+    "name": "flag",
+    "keywords": ""
+  },
+  {
+    "name": "folder-closed",
+    "keywords": ""
+  },
+  {
+    "name": "folder-open",
+    "keywords": ""
+  },
+  {
+    "name": "formula",
+    "keywords": ""
+  },
+  {
+    "name": "grid",
+    "keywords": ""
+  },
+  {
+    "name": "hamburger",
+    "keywords": ""
+  },
+  {
+    "name": "help",
+    "keywords": ""
+  },
+  {
+    "name": "home",
+    "keywords": ""
+  },
+  {
+    "name": "image",
+    "keywords": ""
+  },
+  {
+    "name": "inbox",
+    "keywords": ""
+  },
+  {
+    "name": "information",
+    "keywords": ""
+  },
+  {
+    "name": "instance",
+    "keywords": ""
+  },
+  {
+    "name": "launch",
+    "keywords": ""
+  },
+  {
+    "name": "link",
+    "keywords": ""
+  },
+  {
+    "name": "list",
+    "keywords": ""
+  },
+  {
+    "name": "location",
+    "keywords": ""
+  },
+  {
+    "name": "lock",
+    "keywords": ""
+  },
+  {
+    "name": "map",
+    "keywords": ""
+  },
+  {
+    "name": "menu",
+    "keywords": ""
+  },
+  {
+    "name": "mobile",
+    "keywords": ""
+  },
+  {
+    "name": "more",
+    "keywords": ""
+  },
+  {
+    "name": "note",
+    "keywords": ""
+  },
+  {
+    "name": "notification",
+    "keywords": ""
+  },
+  {
+    "name": "open",
+    "keywords": ""
+  },
+  {
+    "name": "pause",
+    "keywords": ""
+  },
+  {
+    "name": "pdf",
+    "keywords": ""
+  },
+  {
+    "name": "play",
+    "keywords": ""
+  },
+  {
+    "name": "power",
+    "keywords": ""
+  },
+  {
+    "name": "refresh",
+    "keywords": ""
+  },
+  {
+    "name": "reply",
+    "keywords": ""
+  },
+  {
+    "name": "resize",
+    "keywords": ""
+  },
+  {
+    "name": "save",
+    "keywords": ""
+  },
+  {
+    "name": "search",
+    "keywords": ""
+  },
+  {
+    "name": "settings-alt",
+    "keywords": ""
+  },
+  {
+    "name": "share",
+    "keywords": ""
+  },
+  {
+    "name": "stop",
+    "keywords": ""
+  },
+  {
+    "name": "tablet",
+    "keywords": ""
+  },
+  {
+    "name": "tile",
+    "keywords": ""
+  },
+  {
+    "name": "tree",
+    "keywords": ""
+  },
+  {
+    "name": "unlink",
+    "keywords": ""
+  },
+  {
+    "name": "unlock",
+    "keywords": ""
+  },
+  {
+    "name": "upload",
+    "keywords": ""
+  },
+  {
+    "name": "view",
+    "keywords": ""
+  },
+  {
+    "name": "website",
+    "keywords": ""
+  },
+  {
+    "name": "word",
+    "keywords": ""
+  }
+]
