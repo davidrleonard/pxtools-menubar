@@ -1,0 +1,530 @@
+[
+  {
+    "name": "px-starter-kit-design",
+    "type": "css",
+    "label": "CSS Starter Kit",
+    "keywords": ""
+  },
+  {
+    "name": "px-actionable-text-icons-design",
+    "type": "css",
+    "label": "Actionable Text & Icons",
+    "keywords": "px-actionable-text-icons-design disabled icons link"
+  },
+  {
+    "name": "px-button-group-design",
+    "type": "css",
+    "label": "Button Group",
+    "keywords": "px-button-group-design buttons"
+  },
+  {
+    "name": "px-buttons-design",
+    "type": "css",
+    "label": "Buttons",
+    "keywords": "px-buttons-design icon icons disabled"
+  },
+  {
+    "name": "px-meta-buttons-design",
+    "type": "css",
+    "label": "Buttons (Meta)",
+    "keywords": "px-meta-buttons-design buttons"
+  },
+  {
+    "name": "px-code-design",
+    "type": "css",
+    "label": "Code",
+    "keywords": "px-code-design pre"
+  },
+  {
+    "name": "px-colors-design",
+    "type": "css",
+    "label": "Colors",
+    "keywords": "px-colors-design light dark"
+  },
+  {
+    "name": "px-forms-design",
+    "type": "css",
+    "label": "Forms",
+    "keywords": "checkbox input select multi multiselect multi-select field textarea validation"
+  },
+  {
+    "name": "px-headings-design",
+    "type": "css",
+    "label": "Headings",
+    "keywords": "px-headings-design text typography"
+  },
+  {
+    "name": "px-helpers-design",
+    "type": "css",
+    "label": "Helpers",
+    "keywords": "px-helpers-design utilities float pointer informative capitalize"
+  },
+  {
+    "name": "px-list-bare-design",
+    "type": "css",
+    "label": "List Bare",
+    "keywords": "px-list-bare-design lists"
+  },
+  {
+    "name": "px-list-inline-design",
+    "type": "css",
+    "label": "List Inline",
+    "keywords": "px-list-inline-design lists"
+  },
+  {
+    "name": "px-list-ui-design",
+    "type": "css",
+    "label": "List UI",
+    "keywords": "px-list-ui-design lists"
+  },
+  {
+    "name": "px-meta-lists-design",
+    "type": "css",
+    "label": "Lists (Meta)",
+    "keywords": "px-meta-lists-design lists"
+  },
+  {
+    "name": "px-tables-design",
+    "type": "css",
+    "label": "Tables",
+    "keywords": "px-tables-design rows columns"
+  },
+  {
+    "name": "px-toggle-design",
+    "type": "css",
+    "label": "Toggle",
+    "keywords": "px-toggle-design checkbox"
+  },
+  {
+    "name": "px-box-design",
+    "type": "css",
+    "label": "Box",
+    "keywords": "px-box-design container"
+  },
+  {
+    "name": "px-flag-design",
+    "type": "css",
+    "label": "Flag",
+    "keywords": "px-flag-design image"
+  },
+  {
+    "name": "px-flexbox-design",
+    "type": "css",
+    "label": "Flexbox",
+    "keywords": "px-flexbox-design flex layout grid"
+  },
+  {
+    "name": "px-layout-design",
+    "type": "css",
+    "label": "Layout",
+    "keywords": "px-layout-design grid"
+  },
+  {
+    "name": "px-spacing-design",
+    "type": "css",
+    "label": "Spacing",
+    "keywords": "px-spacing-design margin padding"
+  },
+  {
+    "name": "px-spacing-responsive-design",
+    "type": "css",
+    "label": "Spacing (Responsive)",
+    "keywords": "px-spacing-responsive-design margin padding spacing responsive mobile"
+  },
+  {
+    "name": "px-widths-design",
+    "type": "css",
+    "label": "Widths",
+    "keywords": "px-widths-design sizing layout grid"
+  },
+  {
+    "name": "px-widths-responsive-design",
+    "type": "css",
+    "label": "Widths (Responsive)",
+    "keywords": "px-widths-responsive-design sizing responsive mobile layout grid"
+  },
+  {
+    "name": "px-widths-tools-design",
+    "type": "css",
+    "label": "Widths Tools",
+    "keywords": "px-widths-tools-design sizing layout grid"
+  },
+  {
+    "name": "px-box-sizing-design",
+    "type": "css",
+    "label": "Box Sizing",
+    "keywords": "px-box-sizing-design"
+  },
+  {
+    "name": "px-clearfix-design",
+    "type": "css",
+    "label": "Clearfix",
+    "keywords": "px-clearfix-design"
+  },
+  {
+    "name": "px-defaults-design",
+    "type": "css",
+    "label": "Defaults",
+    "keywords": "px-defaults-design"
+  },
+  {
+    "name": "px-functions-design",
+    "type": "css",
+    "label": "Functions",
+    "keywords": "px-functions-design rem pixels px"
+  },
+  {
+    "name": "px-iconography-design",
+    "type": "css",
+    "label": "Iconography",
+    "keywords": "px-iconography-design icons font awesome"
+  },
+  {
+    "name": "px-mixins-design",
+    "type": "css",
+    "label": "Mixins",
+    "keywords": "px-mixins-design font border rtl"
+  },
+  {
+    "name": "px-normalize-design",
+    "type": "css",
+    "label": "Normalize",
+    "keywords": "px-normalize-design"
+  },
+  {
+    "name": "px-typography-design",
+    "type": "css",
+    "label": "Typography",
+    "keywords": "px-typography-design type font inspira"
+  },
+  {
+    "name": "px-viewport-design",
+    "type": "css",
+    "label": "Viewport",
+    "keywords": "px-viewport-design responsive breakpoint"
+  },
+  {
+    "name": "px-alert-label",
+    "type": "component",
+    "label": "Alert Label",
+    "keywords": "px-alert-label pill text"
+  },
+  {
+    "name": "px-alert-message",
+    "type": "component",
+    "label": "Alert Message",
+    "keywords": "px-alert-message notification toast"
+  },
+  {
+    "name": "px-app-nav",
+    "type": "component",
+    "label": "App Nav",
+    "keywords": "px-app-nav navigation nav sidebar"
+  },
+  {
+    "name": "px-card",
+    "type": "component",
+    "label": "Card",
+    "keywords": "px-card card"
+  },
+  {
+    "name": "px-deck-selector",
+    "type": "component",
+    "label": "Deck Selector",
+    "keywords": "px-deck-selector deck dropdown drop-down"
+  },
+  {
+    "name": "px-sample-cards",
+    "type": "component",
+    "label": "Sample Cards",
+    "keywords": "px-sample-cards card cards"
+  },
+  {
+    "name": "px-widget-cards",
+    "type": "component",
+    "label": "Widget Cards",
+    "keywords": "px-widget-cards card cards"
+  },
+  {
+    "name": "px-percent-circle",
+    "type": "component",
+    "label": "Percent Circle",
+    "keywords": "px-percent-circle charts graph graphs percent percentage gauge"
+  },
+  {
+    "name": "px-gauge",
+    "type": "component",
+    "label": "Gauge",
+    "keywords": "px-gauge charts graph graphs percent percentage gauge"
+  },
+  {
+    "name": "px-simple-area-chart",
+    "type": "component",
+    "label": "Simple Area Chart",
+    "keywords": "px-simple-area-chart charts graph graphs area stacked"
+  },
+  {
+    "name": "px-simple-bar-chart",
+    "type": "component",
+    "label": "Simple Bar Chart",
+    "keywords": "px-simple-bar-chart charts graph graphs bar column"
+  },
+  {
+    "name": "px-simple-horizontal-bar-chart",
+    "type": "component",
+    "label": "Simple Horizontal Bar Chart",
+    "keywords": "px-simple-horizontal-bar-chart charts graph graphs bar"
+  },
+  {
+    "name": "px-simple-line-chart",
+    "type": "component",
+    "label": "Simple Line Chart",
+    "keywords": "px-simple-line-chart charts graph graphs"
+  },
+  {
+    "name": "px-simple-win-loss-chart",
+    "type": "component",
+    "label": "Simple Win-Loss Chart",
+    "keywords": "px-simple-win-loss-chart charts graph graphs win loss"
+  },
+  {
+    "name": "px-vis",
+    "type": "component",
+    "label": "Vis Framework",
+    "keywords": "px-vis charts chart graph graphs viz framework"
+  },
+  {
+    "name": "px-vis-parallel-coordinates",
+    "type": "component",
+    "label": "Vis Parallel Coordinates",
+    "keywords": "px-vis-parallel-coordinates charts chart graph graphs viz coords axes profile comparative"
+  },
+  {
+    "name": "px-vis-pie-chart",
+    "type": "component",
+    "label": "Vis Pie Chart",
+    "keywords": "px-vis-pie-chart charts graph graphs viz cake circle divided circular percentage sector sectogram segmented segment proportional wedge donut"
+  },
+  {
+    "name": "px-vis-polar",
+    "type": "component",
+    "label": "Vis Polar Chart",
+    "keywords": "px-vis-polar charts chart graph graphs viz"
+  },
+  {
+    "name": "px-vis-radar",
+    "type": "component",
+    "label": "Vis Radar Chart",
+    "keywords": "px-vis-radar charts chart graph graphs viz spider star"
+  },
+  {
+    "name": "px-vis-spark",
+    "type": "component",
+    "label": "Vis Spark",
+    "keywords": "px-vis-spark charts chart graph graphs viz line bar win loss kpi"
+  },
+  {
+    "name": "px-vis-timeseries",
+    "type": "component",
+    "label": "Vis Timeseries",
+    "keywords": "px-vis-timeseries time-series charts chart graph graphs viz time series chronological"
+  },
+  {
+    "name": "px-vis-xy-chart",
+    "type": "component",
+    "label": "Vis XY Chart",
+    "keywords": "px-vis-xy-chart charts chart graph graphs viz x-y x y line scatter sequence"
+  },
+  {
+    "name": "px-clipboard",
+    "type": "component",
+    "label": "Clipboard",
+    "keywords": "px-clipboard copy paste"
+  },
+  {
+    "name": "px-context-browser",
+    "type": "component",
+    "label": "Context Browser",
+    "keywords": "px-context-browser miller asset assets"
+  },
+  {
+    "name": "px-data-table",
+    "type": "component",
+    "label": "Data Table",
+    "keywords": "px-data-table grid datagrid"
+  },
+  {
+    "name": "px-calendar-picker",
+    "type": "component",
+    "label": "Calendar Picker",
+    "keywords": "px-calendar-picker datetime date day form input"
+  },
+  {
+    "name": "px-datetime-field",
+    "type": "component",
+    "label": "Datetime Field",
+    "keywords": "px-datetime-field form input"
+  },
+  {
+    "name": "px-datetime-picker",
+    "type": "component",
+    "label": "Datetime Picker",
+    "keywords": "px-datetime-picker form input"
+  },
+  {
+    "name": "px-datetime-range-field",
+    "type": "component",
+    "label": "Datetime Range Field",
+    "keywords": "px-datetime-range-field form input"
+  },
+  {
+    "name": "px-datetime-range-panel",
+    "type": "component",
+    "label": "Datetime Range Panel",
+    "keywords": "px-datetime-range-panel form input"
+  },
+  {
+    "name": "px-rangepicker",
+    "type": "component",
+    "label": "Rangepicker",
+    "keywords": "px-rangepicker datetime form input"
+  },
+  {
+    "name": "px-drawer",
+    "type": "component",
+    "label": "Drawer",
+    "keywords": "px-drawer drawer mobile panel"
+  },
+  {
+    "name": "px-dropdown",
+    "type": "component",
+    "label": "Dropdown",
+    "keywords": "px-dropdown menu picker drop-down"
+  },
+  {
+    "name": "px-file-upload",
+    "type": "component",
+    "label": "File Upload",
+    "keywords": "px-file-upload form input attach attachment"
+  },
+  {
+    "name": "px-polymer-font-awesome",
+    "type": "component",
+    "label": "Font Awesome",
+    "keywords": "px-polymer-font-awesome icon icons font awesome iconography"
+  },
+  {
+    "name": "px-inbox",
+    "type": "component",
+    "label": "Inbox",
+    "keywords": "px-inbox list detail list detail mail queue alerts cases"
+  },
+  {
+    "name": "px-kpi",
+    "type": "component",
+    "label": "KPI",
+    "keywords": "px-kpi dashboard key performance indicator widget spark numeric"
+  },
+  {
+    "name": "px-login",
+    "type": "component",
+    "label": "Login",
+    "keywords": "px-login log-in log in sign in sign-in"
+  },
+  {
+    "name": "px-map",
+    "type": "component",
+    "label": "Map",
+    "keywords": "px-map map maps mapping gis location geographic geography"
+  },
+  {
+    "name": "px-modal",
+    "type": "component",
+    "label": "Modal",
+    "keywords": "px-modal modal dialog dialogue"
+  },
+  {
+    "name": "px-number-formatter",
+    "type": "component",
+    "label": "Number Formatter",
+    "keywords": "px-number-formatter number currency numbro localization"
+  },
+  {
+    "name": "px-overlay",
+    "type": "component",
+    "label": "Overlay",
+    "keywords": "px-overlay transparency"
+  },
+  {
+    "name": "px-popover",
+    "type": "component",
+    "label": "Popover",
+    "keywords": "px-popover pop-over"
+  },
+  {
+    "name": "px-progress-bar",
+    "type": "component",
+    "label": "Progress Bar",
+    "keywords": "px-progress-bar loading"
+  },
+  {
+    "name": "px-slider",
+    "type": "component",
+    "label": "Slider",
+    "keywords": "px-slider range form input"
+  },
+  {
+    "name": "px-spinner",
+    "type": "component",
+    "label": "Spinner",
+    "keywords": "px-spinner wait loading load"
+  },
+  {
+    "name": "px-table-view",
+    "type": "component",
+    "label": "Table View",
+    "keywords": "px-table-view table view table-view mobile"
+  },
+  {
+    "name": "px-tabs",
+    "type": "component",
+    "label": "Tabs",
+    "keywords": "px-tabs navigation nav panel"
+  },
+  {
+    "name": "px-timeline",
+    "type": "component",
+    "label": "Timeline",
+    "keywords": "px-timeline time line social feed media activity comment"
+  },
+  {
+    "name": "px-toggle",
+    "type": "component",
+    "label": "Toggle",
+    "keywords": "px-toggle switch checkbox tog"
+  },
+  {
+    "name": "px-tooltip",
+    "type": "component",
+    "label": "Tooltip",
+    "keywords": "px-tooltip hover help tip"
+  },
+  {
+    "name": "px-typeahead",
+    "type": "component",
+    "label": "Typeahead",
+    "keywords": "px-typeahead typeahead autocomplete dropdown drop-down"
+  },
+  {
+    "name": "px-validation",
+    "type": "component",
+    "label": "Validation",
+    "keywords": "px-validation form field validate input error help"
+  },
+  {
+    "name": "px-view-header",
+    "type": "component",
+    "label": "View Header",
+    "keywords": "px-view-header page deck navigation nav"
+  }
+]

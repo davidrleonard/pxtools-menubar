@@ -20,7 +20,7 @@
     "watch": "^1.0.2",
     "yargs": "^8.0.1"
   },
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "build": "electron-packager . 'Predix UI Menubar' --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
     "start": "electron .",

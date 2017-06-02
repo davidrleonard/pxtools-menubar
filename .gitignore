@@ -1,5 +1,6 @@
 node_modules
 bower_components
+src/client/public/bower_components
 .DS_Store
 pxtools-menubar-*.zip
 Predix\ UI\ Menubar-*

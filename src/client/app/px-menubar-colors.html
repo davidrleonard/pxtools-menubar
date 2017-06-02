@@ -1,54 +1,54 @@
 <!-- Load dependencies -->
-<link rel="import" href="../bower_components/polymer/polymer.html"/>
-<link rel="import" href="px-menubar-icons-result.html"/>
+<link rel="import" href="../public/bower_components/polymer/polymer.html"/>
+<link rel="import" href="px-menubar-colors-result.html"/>
 
 <!-- Import style modules -->
-<!-- <link rel="import" href="../css/app-styles.html"/> -->
+<link rel="import" href="../public/css/app-styles.html"/>
 
-<dom-module id="px-menubar-icons">
+<dom-module id="px-menubar-colors">
   <template>
     <style include="app-styles">
-      .icons__search__input {
+      .colors__search__input {
         font-size: 1.2rem;
       }
-      .icons__search__redesigned {
+      .colors__search__redesigned {
         margin-top: .75rem;
       }
-      .icons__search__redesigned span {
+      .colors__search__redesigned span {
         position: relative;
-        top: -0.35rem;
+        top: -0.05rem;
         padding-left: .5rem;
       }
 
-      .icons__results {
-        margin-top: .75rem;
-      }
-      .icons__results > px-menubar-icons-result {
-        width: 33%;
-        float: left;
+      .colors__results {
+
       }
     </style>
-    <iron-ajax url="../data/icons.json" last-response="{{rawList}}" auto></iron-ajax>
+    <iron-ajax url="../../data/colors.json" last-response="{{rawList}}" auto></iron-ajax>
 
     <!-- Intro -->
-    <div class="icons__intro">
-      <h3>Search for icons</h3>
+    <div class="colors__intro">
+      <h3>Search for colors</h3>
     </div>
 
     <!-- Search -->
-    <div class="icons__search">
+    <div class="colors__search">
       <input
           id="search"
-          class="text-input icons__search__input"
+          class="text-input colors__search__input"
           type="text"
-          placeholder="home, dashboards, alerts"
+          placeholder="$gray10 or rgb(1,2,3) or #000abc"
           value="{{searchText::input}}">
+      <div class="colors__search__redesigned">
+        <px-toggle size="small" checked="{{searchRedesigned}}"></px-toggle>
+        <span>Redesigned colors</span>
+      </div>
     </div>
 
     <!-- Results -->
-    <div class="icons__results">
+    <div class="colors__results">
       <template is="dom-repeat" items="{{filteredList}}">
-        <px-menubar-icons-result name="px:{{item.name}}"></px-menubar-icons-result>
+        <px-menubar-colors-result name="{{item.name}}" rgb="{{item.rgb}}" hex="{{item.hex}}" search-text="{{searchText}}"></px-menubar-colors-result>
       </template>
       <template is="dom-if" if="{{isEmpty(searchText)}}">
         <p>Start typing to see results.</p>
@@ -58,7 +58,7 @@
 </dom-module>
 <script>
   Polymer({
-    is: 'px-menubar-icons',
+    is: 'px-menubar-colors',
     properties: {
       searchText: {
         type: String,
@@ -69,7 +69,11 @@
       },
       filteredList: {
         type: Array,
-        computed: 'getFilteredList(rawList, searchText)'
+        computed: 'getFilteredList(rawList, searchText, searchRedesigned)'
+      },
+      searchRedesigned: {
+        type: Boolean,
+        value: false
       }
     },
 
@@ -83,7 +87,9 @@
         maxPatternLength: 32,
         minMatchCharLength: 1,
         keys: [
-          "name"
+          "name",
+          "rgb",
+          "hex"
         ]
       }
     },
@@ -109,11 +115,12 @@
       return fuse.search(str);
     },
 
-    getFilteredList(rawList, searchText) {
+    getFilteredList(rawList, searchText, searchRedesigned) {
       if (searchText === "") {
         return [];
       }
-      return this.searchItems(rawList, searchText);
+      const filteredItems = rawList.filter(item=>searchRedesigned ? item.redesigned : !item.redesigned);
+      return this.searchItems(filteredItems, searchText);
     }
   });
 </script>
