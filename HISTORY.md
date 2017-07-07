@@ -1,3 +1,8 @@
+0.2.2
+===============
+* Update icon names with latest, add aliases
+* Turn on redesigned colors by default 
+
 0.2.1
 ===============
 * Fix regression that made it impossible to quit the app

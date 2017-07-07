@@ -1,27 +1,27 @@
 [
   {
     "name": "administration",
-    "keywords": ""
+    "keywords": "cog, wrench"
   },
   {
     "name": "aircraft",
-    "keywords": ""
+    "keywords": "airplane, plane, aviation"
   },
   {
     "name": "aircraft-engine",
-    "keywords": ""
+    "keywords": "airplane, plane, aviation, turbine"
   },
   {
     "name": "airport",
-    "keywords": ""
+    "keywords": "aviation"
   },
   {
-    "name": "alerts",
-    "keywords": ""
+    "name": "exclamation-triangle",
+    "keywords": "alerts"
   },
   {
     "name": "analysis",
-    "keywords": ""
+    "keywords": "graph, chart, area"
   },
   {
     "name": "analytics",
@@ -36,124 +36,124 @@
     "keywords": ""
   },
   {
-    "name": "automobile",
-    "keywords": ""
+    "name": "car",
+    "keywords": "auto, automobile, transportation"
   },
   {
     "name": "block",
-    "keywords": ""
+    "keywords": "power"
   },
   {
     "name": "boiler",
-    "keywords": ""
+    "keywords": "power"
   },
   {
     "name": "bug",
-    "keywords": ""
+    "keywords": "insect"
   },
   {
     "name": "calendar",
-    "keywords": ""
+    "keywords": "date"
   },
   {
-    "name": "cases",
-    "keywords": ""
+    "name": "briefcase",
+    "keywords": "cases"
   },
   {
     "name": "catalog",
-    "keywords": ""
+    "keywords": "book, list"
   },
   {
-    "name": "chat",
-    "keywords": ""
+    "name": "comments",
+    "keywords": "chat"
   },
   {
     "name": "class",
-    "keywords": ""
+    "keywords": "hexagon"
   },
   {
     "name": "condensor",
-    "keywords": ""
+    "keywords": "power, energy, steam"
   },
   {
     "name": "cooling-tower",
-    "keywords": ""
+    "keywords": "power, energy, steam"
   },
   {
     "name": "crane",
-    "keywords": ""
+    "keywords": "construction, asset"
   },
   {
     "name": "comment",
-    "keywords": ""
+    "keywords": "communication, chat"
   },
   {
     "name": "dashboard",
-    "keywords": ""
+    "keywords": "gauge, instrument, kpi"
   },
   {
     "name": "data-source",
-    "keywords": ""
+    "keywords": "upload, edge, machine"
   },
   {
     "name": "deployment",
-    "keywords": ""
+    "keywords": "rocket, space"
   },
   {
     "name": "dev-ops",
-    "keywords": ""
+    "keywords": "hexagon, wrench"
   },
   {
     "name": "digital-twin",
-    "keywords": ""
+    "keywords": "hexagon, cloud"
   },
   {
     "name": "edge-device",
-    "keywords": ""
+    "keywords": "machine"
   },
   {
     "name": "efficiency",
-    "keywords": ""
+    "keywords": "kpi"
   },
   {
     "name": "email",
-    "keywords": ""
+    "keywords": "communication, message"
   },
   {
     "name": "fleet",
-    "keywords": ""
+    "keywords": "asset"
   },
   {
     "name": "gas-line",
-    "keywords": ""
+    "keywords": "power, energy"
   },
   {
     "name": "gas-turbine",
-    "keywords": ""
+    "keywords": "power, energy"
   },
   {
     "name": "heat-rate",
-    "keywords": ""
+    "keywords": "kpi, power, energy"
   },
   {
     "name": "hierarchy",
-    "keywords": ""
+    "keywords": "relationship"
   },
   {
     "name": "hrsg",
-    "keywords": ""
+    "keywords": "power, energy"
   },
   {
     "name": "ingestion",
-    "keywords": ""
+    "keywords": "machine, edge, asset"
   },
   {
     "name": "kpi",
-    "keywords": ""
+    "keywords": "dashboard"
   },
   {
     "name": "lightbulb",
-    "keywords": ""
+    "keywords": "energy, power, current"
   },
   {
     "name": "line",
@@ -161,151 +161,151 @@
   },
   {
     "name": "locomotive",
-    "keywords": ""
+    "keywords": "transportation, rail, train, engine"
   },
   {
     "name": "log",
-    "keywords": ""
+    "keywords": "report, sheet"
   },
   {
     "name": "machine",
-    "keywords": ""
+    "keywords": "turbine, fan, asset"
   },
   {
     "name": "manufacturing",
-    "keywords": ""
+    "keywords": "factory, assembly, line"
   },
   {
     "name": "message",
-    "keywords": ""
+    "keywords": "communication"
   },
   {
     "name": "microservice",
-    "keywords": ""
+    "keywords": "hexagon, code"
   },
   {
     "name": "orchestration",
-    "keywords": ""
+    "keywords": "analytics"
   },
   {
     "name": "order",
-    "keywords": ""
+    "keywords": "sales, report"
   },
   {
     "name": "output",
-    "keywords": ""
+    "keywords": "kpi, dashboard"
   },
   {
     "name": "phone",
-    "keywords": ""
+    "keywords": "communications, telephone, call"
   },
   {
     "name": "pipeline",
-    "keywords": ""
+    "keywords": "oil, gas, energy, flow, process, diagram"
   },
   {
     "name": "plant",
-    "keywords": ""
+    "keywords": "power, energy, oil, gas, factory, manufacturing"
   },
   {
     "name": "product",
-    "keywords": ""
+    "keywords": "box, shipping, manufacturing"
   },
   {
     "name": "software",
-    "keywords": ""
+    "keywords": "computer, mouse, screen"
   },
   {
     "name": "rail-yard",
-    "keywords": ""
+    "keywords": "transportation, car, train"
   },
   {
     "name": "route",
-    "keywords": ""
+    "keywords": "usb, flow, diagram, "
   },
   {
     "name": "server",
-    "keywords": ""
+    "keywords": "box, machine, computer, communication"
   },
   {
-    "name": "settings",
-    "keywords": ""
+    "name": "cog",
+    "keywords": "settings, administration, gear"
   },
   {
     "name": "sms",
-    "keywords": ""
+    "keywords": "communication, phone, text, message, mobile"
   },
   {
     "name": "solar-panel",
-    "keywords": ""
+    "keywords": "energy, power, renewable"
   },
   {
     "name": "spaces",
-    "keywords": ""
+    "keywords": "io"
   },
   {
     "name": "steam-turbine",
-    "keywords": ""
+    "keywords": "power, energy"
   },
   {
     "name": "tag",
-    "keywords": ""
+    "keywords": "apm, sensor"
   },
   {
-    "name": "tag-group",
-    "keywords": ""
+    "name": "tags",
+    "keywords": "apm, group, sensor"
   },
   {
     "name": "templates",
-    "keywords": ""
+    "keywords": "reports, asset"
   },
   {
     "name": "train",
-    "keywords": ""
+    "keywords": "locomotive, transportation, rail"
   },
   {
     "name": "truck",
-    "keywords": ""
+    "keywords": "shipping, transportation, manufacturing"
   },
   {
     "name": "user",
-    "keywords": ""
+    "keywords": "profile, person"
   },
   {
     "name": "users",
-    "keywords": ""
+    "keywords": "profile, people, group"
   },
   {
     "name": "version",
-    "keywords": ""
+    "keywords": "asset"
   },
   {
     "name": "wind-turbine",
-    "keywords": ""
+    "keywords": "power, energy, renewable"
   },
   {
     "name": "add",
-    "keywords": ""
+    "keywords": "plus, new, create"
   },
   {
     "name": "arrow-down",
-    "keywords": ""
+    "keywords": "chevron"
   },
   {
     "name": "arrow-left",
-    "keywords": ""
+    "keywords": "chevron, previous, back"
   },
   {
     "name": "arrow-right",
-    "keywords": ""
+    "keywords": "chevron, next, forward"
   },
   {
     "name": "arrow-up",
-    "keywords": ""
+    "keywords": "chevron"
   },
   {
     "name": "alert",
-    "keywords": ""
+    "keywords": "notification, badge, communication, message"
   },
   {
     "name": "calculator",
@@ -313,167 +313,171 @@
   },
   {
     "name": "camera",
-    "keywords": ""
+    "keywords": "image, picture, photo, video"
   },
   {
-    "name": "chart",
-    "keywords": ""
+    "name": "bar-chart",
+    "keywords": "chart, graph, analysis, measure"
   },
   {
     "name": "chevron-down",
-    "keywords": ""
+    "keywords": "arrow"
   },
   {
     "name": "chevron-left",
-    "keywords": ""
+    "keywords": "arrow, previous, back"
   },
   {
     "name": "chevron-right",
-    "keywords": ""
+    "keywords": "chevron, next, forward"
   },
   {
     "name": "chevron-up",
-    "keywords": ""
+    "keywords": "arrow"
   },
   {
     "name": "clock",
-    "keywords": ""
+    "keywords": "time, datetime"
   },
   {
     "name": "close",
-    "keywords": ""
+    "keywords": "x, times"
   },
   {
     "name": "collapse",
-    "keywords": ""
+    "keywords": "reduce, minimize"
   },
   {
     "name": "collapse-left",
-    "keywords": ""
+    "keywords": "reduce, minimize"
   },
   {
-    "name": "confirm",
-    "keywords": ""
+    "name": "check-circle",
+    "keywords": "confirm, correct, valid, selected"
+  },
+  {
+    "name": "check",
+    "keywords": "selected"
   },
   {
     "name": "copy",
-    "keywords": ""
+    "keywords": "clipboard"
   },
   {
     "name": "crosshairs",
-    "keywords": ""
+    "keywords": "map, gis, location"
   },
   {
     "name": "csv",
-    "keywords": ""
+    "keywords": "data, format, export, download, excel, spreadsheet"
   },
   {
     "name": "delete",
-    "keywords": ""
+    "keywords": "trashcan, recycling, remove"
   },
   {
     "name": "desktop",
-    "keywords": ""
+    "keywords": "pc, communication, device"
   },
   {
     "name": "document",
-    "keywords": ""
+    "keywords": "report, page"
   },
   {
     "name": "download",
-    "keywords": ""
+    "keywords": "export, save"
   },
   {
     "name": "edit",
-    "keywords": ""
+    "keywords": "pencil"
   },
   {
     "name": "excel",
-    "keywords": ""
+    "keywords": "data, format, export, download, csv, spreadsheet"
   },
   {
     "name": "expand",
-    "keywords": ""
+    "keywords": "maximize"
   },
   {
     "name": "expand-right",
-    "keywords": ""
+    "keywords": "maximize"
   },
   {
     "name": "failure",
-    "keywords": ""
+    "keywords": "alert, warning, invalid"
   },
   {
-    "name": "favorite",
-    "keywords": ""
+    "name": "star",
+    "keywords": "favorite"
   },
   {
     "name": "filter",
-    "keywords": ""
+    "keywords": "funnel"
   },
   {
     "name": "flag",
-    "keywords": ""
+    "keywords": "mark"
   },
   {
-    "name": "folder-closed",
-    "keywords": ""
+    "name": "folder",
+    "keywords": "close, file"
   },
   {
     "name": "folder-open",
-    "keywords": ""
+    "keywords": "file"
   },
   {
     "name": "formula",
-    "keywords": ""
+    "keywords": "math, calculate"
   },
   {
     "name": "grid",
-    "keywords": ""
+    "keywords": "layout, view, tile"
   },
   {
-    "name": "hamburger",
-    "keywords": ""
+    "name": "bars",
+    "keywords": "hamburger, menu"
   },
   {
-    "name": "help",
-    "keywords": ""
+    "name": "question-circle",
+    "keywords": "help"
   },
   {
     "name": "home",
-    "keywords": ""
+    "keywords": "house"
   },
   {
     "name": "image",
-    "keywords": ""
+    "keywords": "photo, camera"
   },
   {
     "name": "inbox",
-    "keywords": ""
+    "keywords": "layout, view, email"
   },
   {
-    "name": "information",
-    "keywords": ""
+    "name": "info-circle",
+    "keywords": "information, help, support"
   },
   {
     "name": "instance",
-    "keywords": ""
+    "keywords": "asset"
   },
   {
     "name": "launch",
-    "keywords": ""
+    "keywords": "share, view, open"
   },
   {
     "name": "link",
-    "keywords": ""
+    "keywords": "hyperlink, url, chain"
   },
   {
     "name": "list",
-    "keywords": ""
+    "keywords": "layout, view"
   },
   {
-    "name": "location",
-    "keywords": ""
+    "name": "map-marker",
+    "keywords": "location, gis"
   },
   {
     "name": "lock",
@@ -481,95 +485,95 @@
   },
   {
     "name": "map",
-    "keywords": ""
+    "keywords": "gis, location, fold"
   },
   {
-    "name": "menu",
-    "keywords": ""
+    "name": "ellipsis-h",
+    "keywords": "more, dots"
   },
   {
     "name": "mobile",
-    "keywords": ""
+    "keywords": "communication, device, sms, phone, application"
   },
   {
-    "name": "more",
-    "keywords": ""
+    "name": "ellipsis-v",
+    "keywords": "menu, kebab, dots, bullets"
   },
   {
     "name": "note",
-    "keywords": ""
+    "keywords": "reminder, writing, document"
   },
   {
     "name": "notification",
-    "keywords": ""
+    "keywords": "bell, alert"
   },
   {
     "name": "open",
-    "keywords": ""
+    "keywords": "arrow, circle, launch, view, trend"
   },
   {
     "name": "pause",
-    "keywords": ""
+    "keywords": "media, music, video"
   },
   {
     "name": "pdf",
-    "keywords": ""
+    "keywords": "data, format, export, download"
   },
   {
     "name": "play",
-    "keywords": ""
+    "keywords": "media, music, video"
   },
   {
     "name": "power",
-    "keywords": ""
+    "keywords": "on, off, switch"
   },
   {
     "name": "refresh",
-    "keywords": ""
+    "keywords": "reload"
   },
   {
     "name": "reply",
-    "keywords": ""
+    "keywords": "respond, message, communication"
   },
   {
     "name": "resize",
-    "keywords": ""
+    "keywords": "move, drag, reorder"
   },
   {
     "name": "save",
-    "keywords": ""
+    "keywords": "disk"
   },
   {
     "name": "search",
-    "keywords": ""
+    "keywords": "magnifying glass, find"
   },
   {
-    "name": "settings-alt",
-    "keywords": ""
+    "name": "sliders",
+    "keywords": "controls, settings, media, administration"
   },
   {
     "name": "share",
-    "keywords": ""
+    "keywords": "export, upload"
   },
   {
     "name": "stop",
-    "keywords": ""
+    "keywords": "media, music, video"
   },
   {
     "name": "tablet",
-    "keywords": ""
+    "keywords": "communication, device, application"
   },
   {
     "name": "tile",
-    "keywords": ""
+    "keywords": "layout, view, grid"
   },
   {
     "name": "tree",
-    "keywords": ""
+    "keywords": "layout, view, hierarchy"
   },
   {
     "name": "unlink",
-    "keywords": ""
+    "keywords": "chain"
   },
   {
     "name": "unlock",
@@ -577,18 +581,18 @@
   },
   {
     "name": "upload",
-    "keywords": ""
+    "keywords": "share, import"
   },
   {
     "name": "view",
-    "keywords": ""
+    "keywords": "eye, preview"
   },
   {
     "name": "website",
-    "keywords": ""
+    "keywords": "application, screen, software"
   },
   {
     "name": "word",
-    "keywords": ""
+    "keywords": "data, format, export, download, document, docx"
   }
 ]
