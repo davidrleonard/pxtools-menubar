@@ -1,0 +1,46 @@
+<!-- Load dependencies -->
+<link rel="import" href="../public/bower_components/polymer/polymer.html"/>
+<link rel="import" href="../../lib/electron-event-helpers.html">
+
+<dom-module id="px-menubar-docs-result">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .result-doc__name {
+        padding-left: 10px;
+        flex: 1;
+      }
+      .result-doc__type {
+        color: #425866;
+        font-size: .9rem;
+        width: 120px;
+      }
+      .clickable {
+        cursor: pointer;
+      }
+      :host(:hover) {
+        background-color: var(--pxm-icons-result-background--hover);
+      }
+    </style>
+
+    <p class="result-doc__name">{{name}}</p>
+    <p class="result-doc__type">{{type}}</p>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar-docs-result',
+
+    properties: {
+      name: String,
+      type: String
+    }
+  });
+</script>

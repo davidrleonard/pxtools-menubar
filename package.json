@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "Simple menubar app that helps you search/copy Predix UI color values",
   "dependencies": {
+    "axios": "^0.16.2",
     "menubar": "*"
   },
   "devDependencies": {

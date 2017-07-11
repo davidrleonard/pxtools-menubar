@@ -6,11 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>px-menubar</title>
 
-  <!-- Polymer settings -->
   <script>
+    // Create app global store
+    window.PXM = (window.PXM || {});
+
+    (function() {
+      // Create app data stores
+      const store = require('../lib/store.js');
+      const stores = PXM.stores = {};
+      const modules = stores.modules = new store.createModuleStore({
+        configName: 'modules-r1' // r1 schema
+      });
+      modules.seed();
+      // store.seedModuleStore(PXM.stores.modules);
+    })();
+
+    // Configure Polymer
     window.Polymer = {
       dom: 'shadow'
     };
+
+    // Expose reload helper for development
+    function reload() {
+      PXM.remote = PXM.remote || require('remote');
+      PXM.remote.getCurrentWindow().reload();
+    }
+  </script>
+  <!-- For development only -->
+  <script>
+
   </script>
 
   <!-- App shell imports -->

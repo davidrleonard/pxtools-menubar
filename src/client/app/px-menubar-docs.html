@@ -1,0 +1,201 @@
+<!-- Load dependencies -->
+<link rel="import" href="../public/bower_components/polymer/polymer.html"/>
+<link rel="import" href="px-menubar-docs-result.html"/>
+
+<!-- Import style modules -->
+<!-- <link rel="import" href="../css/app-styles.html"/> -->
+
+<dom-module id="px-menubar-docs">
+  <template>
+    <style include="app-styles">
+      .docs__search__input {
+        font-size: 1.2rem;
+      }
+      .docs__search__redesigned {
+        margin-top: .75rem;
+      }
+      .docs__search__redesigned span {
+        position: relative;
+        top: -0.35rem;
+        padding-left: .5rem;
+        text-transform: uppercase;
+      }
+
+      .docs__results {
+        margin-top: .75rem;
+      }
+
+      .docs__version__status {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: gray;
+        margin-right: .5rem;
+      }
+    </style>
+
+    <template is="dom-if" if="{{!selectedModule}}">
+      <!-- Intro -->
+      <div class="docs__intro">
+        <h3>Serve module docs</h3>
+      </div>
+
+      <!-- Search -->
+      <div class="docs__search">
+        <input
+            id="search"
+            class="text-input docs__search__input"
+            type="text"
+            placeholder="px-vis, px-colors-design, px-typeahead"
+            value="{{searchText::input}}">
+      </div>
+
+      <!-- Results -->
+      <div class="docs__results" id="results" on-tap="_handleResultTapped">
+        <template is="dom-repeat" items="{{filteredList}}">
+          <px-menubar-docs-result name="{{item.name}}" type="{{item.type}}"></px-menubar-docs-result>
+        </template>
+        <template is="dom-if" if="{{isEmpty(searchText)}}">
+          <p>Start typing to find a module.</p>
+        </template>
+      </div>
+    </template>
+    <template is="dom-if" if="{{selectedModule}}">
+      <div class="docs__detail">
+        <div class="docs__detail__header">
+          <a href="#" on-tap="clearSelectedModule"><iron-icon icon="px:arrow-left"></iron-icon> Back to all modules</a>
+          <h3>{{selectedModule.name}}</h3>
+        </div>
+      </div>
+      <template is="dom-if" if="{{!selectedModuleInfo}}">
+        <p>Loading details for {{selectedModule.name}}...</p>
+      </template>
+
+      <!-- Begin version list -->
+      <template is="dom-if" if="{{selectedModuleInfo}}">
+        <template is="dom-repeat" items="{{selectedModuleInfo.allVersions}}">
+          <div class="docs__version">
+            <span class="docs__version__status"></span>
+            <span class="docs__version__name">{{item.name}}</span>
+          </div>
+
+        </template>
+      </template>
+      <!-- End version list -->
+    </template>
+
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar-docs',
+    properties: {
+      searchText: {
+        type: String,
+        value: ''
+      },
+      rawList: {
+        type: Array,
+        value: function() { return this.store.list() }
+      },
+      filteredList: {
+        type: Array,
+        computed: 'getFilteredList(rawList, searchText)'
+      },
+      selectedModule: {
+        type: Object,
+        value: null
+      },
+      selectedModuleInfo: {
+        type: Object,
+        value: null
+      },
+      fetchingModuleInfo: {
+        type: Boolean,
+        value: false
+      }
+    },
+
+    observers: ['getModuleInfo(selectedModule)'],
+
+    get fuseOptions() {
+      return {
+        shouldSort: true,
+        tokenize: true,
+        threshold: 0.6,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          'name',
+          'keywords'
+        ]
+      }
+    },
+
+    created() {
+      this.search = new Fuse();
+      this.store = PXM.stores.modules;
+    },
+
+    attached() {
+      if (!this.selectedModule) {
+        this.focusInput();
+      }
+    },
+
+    detached() {
+    },
+
+    focusInput() {
+      this.$$('#search') && this.$$('#search').focus();
+    },
+
+    isEmpty(text) {
+      return text.length === 0;
+    },
+
+    searchItems(items, str) {
+      const fuse = new Fuse(items, this.fuseOptions);
+      return fuse.search(str);
+    },
+
+    getFilteredList(rawList, searchText) {
+      if (searchText === "") {
+        return [];
+      }
+      return this.searchItems(rawList, searchText);
+    },
+
+    _handleResultTapped(evt) {
+      var resultInPath = evt.path.filter(node => node.nodeName === 'PX-MENUBAR-DOCS-RESULT')[0];
+      if (resultInPath) {
+        var domRepeat = Polymer.dom(this.root).querySelector('template[is=dom-repeat]');
+        var resultItem = domRepeat.modelForElement(resultInPath).item;
+        this.set('selectedModule', resultItem);
+      }
+    },
+
+    clearSelectedModule() {
+      this.selectedModule = null;
+      this.async(this.focusInput, 1);
+    },
+
+    getModuleInfo(m) {
+      if (m === null) {
+        this.selectedModuleInfo = null;
+        return;
+      }
+      if (m !== null && m.name) {
+        this.fetchingModuleInfo = true;
+        this.store.getInfo(m.name)
+          .then((info) => {
+            this.selectedModuleInfo = info;
+            this.fetchingModuleInfo = false;
+          });
+      }
+    }
+  });
+</script>
