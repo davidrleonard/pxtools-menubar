@@ -50,9 +50,6 @@
       <template is="dom-repeat" items="{{filteredList}}">
         <px-menubar-colors-result name="{{item.name}}" rgb="{{item.rgb}}" hex="{{item.hex}}" search-text="{{searchText}}"></px-menubar-colors-result>
       </template>
-      <template is="dom-if" if="{{isEmpty(searchText)}}">
-        <p>Start typing to see results.</p>
-      </template>
     </div>
   </template>
 </dom-module>
@@ -116,11 +113,13 @@
     },
 
     getFilteredList(rawList, searchText, searchRedesigned) {
-      if (searchText === "") {
-        return [];
-      }
       const filteredItems = rawList.filter(item=>searchRedesigned ? item.redesigned : !item.redesigned);
-      return this.searchItems(filteredItems, searchText);
+      if (searchText === "") {
+        return filteredItems;
+      }
+      else {
+        return this.searchItems(filteredItems, searchText);
+      }
     }
   });
 </script>
