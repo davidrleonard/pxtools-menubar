@@ -11,13 +11,14 @@
       .icons__search__input {
         font-size: 1.2rem;
       }
-      .icons__search__redesigned {
+      .icons__search__toggles {
         margin-top: .75rem;
       }
-      .icons__search__redesigned span {
+      .icons__search__toggles span {
         position: relative;
-        top: -0.35rem;
+        top: -0.15rem;
         padding-left: .5rem;
+        padding-right: .5rem;
       }
 
       .icons__results {
@@ -26,6 +27,22 @@
       .icons__results > px-menubar-icons-result {
         width: 33%;
         float: left;
+      }
+      px-menubar-icons-result {
+        --iron-icon-stroke-color: currentcolor;
+        --iron-icon-fill-color: transparent;
+      }
+      px-menubar-icons-result[size="small"] {
+        --iron-icon-width: 16px;
+        --iron-icon-height: 16px;
+      }
+      px-menubar-icons-result[size="medium"] {
+        --iron-icon-width: 22px;
+        --iron-icon-height: 22px;
+      }
+      px-menubar-icons-result[size="large"] {
+        --iron-icon-width: 32px;
+        --iron-icon-height: 32px;
       }
     </style>
     <iron-ajax url="../data/icons.json" last-response="{{rawList}}" auto></iron-ajax>
@@ -43,15 +60,20 @@
           type="text"
           placeholder="home, dashboards, alerts"
           value="{{searchText::input}}">
+      <div class="icons__search__toggles">
+        <px-toggle size="small" checked="{{searchSmall}}"></px-toggle>
+        <span>Small icons</span>
+        <px-toggle size="small" checked="{{searchMedium}}"></px-toggle>
+        <span>Medium icons</span>
+        <px-toggle size="small" checked="{{searchLarge}}"></px-toggle>
+        <span>Large icons</span>
+      </div>
     </div>
 
     <!-- Results -->
     <div class="icons__results">
       <template is="dom-repeat" items="{{filteredList}}">
-        <px-menubar-icons-result name="px:{{item.name}}"></px-menubar-icons-result>
-      </template>
-      <template is="dom-if" if="{{isEmpty(searchText)}}">
-        <p>Start typing to see results.</p>
+        <px-menubar-icons-result name="{{item.prefix}}:{{item.name}}" size$="{{item.set}}"></px-menubar-icons-result>
       </template>
     </div>
   </template>
@@ -69,7 +91,19 @@
       },
       filteredList: {
         type: Array,
-        computed: 'getFilteredList(rawList, searchText)'
+        computed: 'getFilteredList(rawList, searchText, searchSmall, searchMedium, searchLarge)'
+      },
+      searchSmall: {
+        type: Boolean,
+        value: true
+      },
+      searchMedium: {
+        type: Boolean,
+        value: true
+      },
+      searchLarge: {
+        type: Boolean,
+        value: true
       }
     },
 
@@ -110,11 +144,19 @@
       return fuse.search(str);
     },
 
-    getFilteredList(rawList, searchText) {
+    getFilteredList(rawList, searchText, searchSmall, searchMedium, searchLarge) {
+      const filteredItems = rawList.filter(item => {
+        if (searchSmall && item.set === 'small') return true;
+        if (searchMedium && item.set === 'medium') return true;
+        if (searchLarge && item.set === 'large') return true;
+        return false;
+      });
       if (searchText === "") {
-        return [];
+        return filteredItems;
       }
-      return this.searchItems(rawList, searchText);
+      else {
+        return this.searchItems(filteredItems, searchText);
+      }
     }
   });
 </script>
