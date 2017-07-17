@@ -13,13 +13,13 @@
   },
   {
     "name": "app-settings",
-    "keywords": "",
+    "keywords": "settings, administration, gearca",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "calculation",
-    "keywords": "",
+    "keywords": "calculate",
     "set": "small",
     "prefix": "pxs"
   },
@@ -31,19 +31,13 @@
   },
   {
     "name": "chart",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
+    "keywords": "chart, graph, analysis, measure",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "chevron",
-    "keywords": "",
+    "keywords": "down, next, forward, right",
     "set": "small",
     "prefix": "pxs"
   },
@@ -55,7 +49,7 @@
   },
   {
     "name": "confirmed",
-    "keywords": "",
+    "keywords": "check-circle, check, circle, valid, selected",
     "set": "small",
     "prefix": "pxs"
   },
@@ -73,7 +67,7 @@
   },
   {
     "name": "desktop-computer",
-    "keywords": "",
+    "keywords": "pc, communication, device",
     "set": "small",
     "prefix": "pxs"
   },
@@ -84,56 +78,26 @@
     "prefix": "pxs"
   },
   {
-    "name": "",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
     "name": "document-csv",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
+    "keywords": "excel, csv, data, format, export, download, spreadsheet",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "document-pdf",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
+    "keywords": "data, format, export, download",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "document-word",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
+    "keywords": "data, format, export, download, docx",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "document-xls",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
+    "keywords": "excel, office, data, format, export, download, spreadsheet",
     "set": "small",
     "prefix": "pxs"
   },
@@ -169,7 +133,7 @@
   },
   {
     "name": "folder-closed",
-    "keywords": "",
+    "keywords": "file, directory",
     "set": "small",
     "prefix": "pxs"
   },
@@ -187,7 +151,7 @@
   },
   {
     "name": "help",
-    "keywords": "",
+    "keywords": "question-circle, question, circle",
     "set": "small",
     "prefix": "pxs"
   },
@@ -198,14 +162,8 @@
     "prefix": "pxs"
   },
   {
-    "name": "",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
     "name": "information",
-    "keywords": "",
+    "keywords": "information, help, support",
     "set": "small",
     "prefix": "pxs"
   },
@@ -217,13 +175,13 @@
   },
   {
     "name": "location",
-    "keywords": "",
+    "keywords": "map-marker, map, marker, gis",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "locked",
-    "keywords": "",
+    "keywords": "private",
     "set": "small",
     "prefix": "pxs"
   },
@@ -235,19 +193,13 @@
   },
   {
     "name": "module-settings",
-    "keywords": "",
+    "keywords": "settings, administration",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "note",
     "keywords": "reminder, writing, document",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "",
-    "keywords": "",
     "set": "small",
     "prefix": "pxs"
   },
@@ -306,20 +258,14 @@
     "prefix": "pxs"
   },
   {
-    "name": "",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
     "name": "zoom",
-    "keywords": "",
+    "keywords": "in, map, gis, location",
     "set": "small",
     "prefix": "pxs"
   },
   {
     "name": "back",
-    "keywords": "",
+    "keywords": "previous, left, chevron",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -337,7 +283,7 @@
   },
   {
     "name": "down",
-    "keywords": "",
+    "keywords": "next, right, chevron",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -349,25 +295,25 @@
   },
   {
     "name": "favorite",
-    "keywords": "",
+    "keywords": "star",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "generic-user",
-    "keywords": "",
+    "keywords": "user, app, profile, person",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "grid-view",
-    "keywords": "",
+    "keywords": "layout, view, style",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "hamburger",
-    "keywords": "",
+    "keywords": "bars, menu, slider",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -385,7 +331,7 @@
   },
   {
     "name": "inbox-view",
-    "keywords": "",
+    "keywords": "layout, view, email",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -397,37 +343,37 @@
   },
   {
     "name": "list-view",
-    "keywords": "",
+    "keywords": "layout, view",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "log-out",
-    "keywords": "",
+    "keywords": "close, exit, quit, stop",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "menu",
-    "keywords": "",
+    "keywords": "ellipsis-v, kebab, dots, bullets",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "more",
-    "keywords": "",
+    "keywords": "ellipsis-h, more, dots",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "new-window",
-    "keywords": "",
+    "keywords": "app, view, open",
     "set": "medium",
     "prefix": "pxm"
   },
   {
     "name": "next",
-    "keywords": "",
+    "keywords": "arrow, right, chevron",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -439,7 +385,7 @@
   },
   {
     "name": "open-context",
-    "keywords": "",
+    "keywords": "launch, share, view, select",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -457,7 +403,7 @@
   },
   {
     "name": "reload",
-    "keywords": "",
+    "keywords": "refresh",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -475,7 +421,7 @@
   },
   {
     "name": "tile-view",
-    "keywords": "",
+    "keywords": "layout, view, grid",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -487,7 +433,7 @@
   },
   {
     "name": "up",
-    "keywords": "",
+    "keywords": "arrow, up, chevron",
     "set": "medium",
     "prefix": "pxm"
   },
@@ -499,13 +445,13 @@
   },
   {
     "name": "airplane",
-    "keywords": "",
+    "keywords": "aircraft, plane, aviation",
     "set": "large",
     "prefix": "pxl"
   },
   {
     "name": "airplane-engine",
-    "keywords": "",
+    "keywords": "aircraft, plane, aviation, turbine",
     "set": "large",
     "prefix": "pxl"
   },
@@ -517,7 +463,7 @@
   },
   {
     "name": "alerts",
-    "keywords": "",
+    "keywords": "exclamation, triangle",
     "set": "large",
     "prefix": "pxl"
   },
@@ -529,7 +475,7 @@
   },
   {
     "name": "analytics",
-    "keywords": "",
+    "keywords": "graph, charts",
     "set": "large",
     "prefix": "pxl"
   },
@@ -547,7 +493,7 @@
   },
   {
     "name": "automobile",
-    "keywords": "",
+    "keywords": "car, transportation, auto, truck, drive",
     "set": "large",
     "prefix": "pxl"
   },
@@ -571,7 +517,7 @@
   },
   {
     "name": "cases",
-    "keywords": "",
+    "keywords": "briefcase",
     "set": "large",
     "prefix": "pxl"
   },
@@ -583,7 +529,7 @@
   },
   {
     "name": "chat",
-    "keywords": "",
+    "keywords": "comments, discussion, profile, talk",
     "set": "large",
     "prefix": "pxl"
   },
@@ -601,7 +547,7 @@
   },
   {
     "name": "condenser",
-    "keywords": "",
+    "keywords": "power, enegry, stream, condensor",
     "set": "large",
     "prefix": "pxl"
   },
@@ -619,13 +565,13 @@
   },
   {
     "name": "data-sources",
-    "keywords": "",
+    "keywords": "upload, edge, machien",
     "set": "large",
     "prefix": "pxl"
   },
   {
     "name": "deployments",
-    "keywords": "",
+    "keywords": "rocket, space",
     "set": "large",
     "prefix": "pxl"
   },
@@ -643,7 +589,7 @@
   },
   {
     "name": "edge-box",
-    "keywords": "",
+    "keywords": "machine",
     "set": "large",
     "prefix": "pxl"
   },
@@ -673,13 +619,13 @@
   },
   {
     "name": "light-bulb",
-    "keywords": "",
+    "keywords": "energy, power, current",
     "set": "large",
     "prefix": "pxl"
   },
   {
     "name": "line",
-    "keywords": "",
+    "keywords": "factory, assembly",
     "set": "large",
     "prefix": "pxl"
   },
@@ -702,12 +648,6 @@
     "prefix": "pxl"
   },
   {
-    "name": "",
-    "keywords": "",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
     "name": "machine",
     "keywords": "turbine, fan, asset",
     "set": "large",
@@ -715,7 +655,7 @@
   },
   {
     "name": "manufacturing-line",
-    "keywords": "",
+    "keywords": "factory, assembly, line",
     "set": "large",
     "prefix": "pxl"
   },
@@ -739,7 +679,7 @@
   },
   {
     "name": "orders",
-    "keywords": "",
+    "keywords": "sales, report",
     "set": "large",
     "prefix": "pxl"
   },
@@ -763,7 +703,7 @@
   },
   {
     "name": "predix-box",
-    "keywords": "",
+    "keywords": "machine, computer, server, communication",
     "set": "large",
     "prefix": "pxl"
   },
@@ -775,7 +715,7 @@
   },
   {
     "name": "products",
-    "keywords": "",
+    "keywords": "box, hipping, manufacturing",
     "set": "large",
     "prefix": "pxl"
   },
@@ -787,7 +727,7 @@
   },
   {
     "name": "routes",
-    "keywords": "",
+    "keywords": "usb, flow, diagram",
     "set": "large",
     "prefix": "pxl"
   },
@@ -823,7 +763,7 @@
   },
   {
     "name": "tag-group",
-    "keywords": "",
+    "keywords": "apm, sensor, group",
     "set": "large",
     "prefix": "pxl"
   },
@@ -853,7 +793,7 @@
   },
   {
     "name": "versions",
-    "keywords": "",
+    "keywords": "asset",
     "set": "large",
     "prefix": "pxl"
   },
