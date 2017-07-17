@@ -88,8 +88,10 @@
 
       <div class="app__main">
         <iron-pages
+            id="pages"
             selected="[[active]]"
-            attr-for-selected="name">
+            attr-for-selected="name"
+            selected-item="{{activePage}}">
           <px-menubar-colors name="colors"></px-menubar-colors>
           <px-menubar-icons name="icons"></px-menubar-icons>
         </iron-pages>
@@ -109,6 +111,10 @@
       notificationText: {
         type: String,
         observer: 'showNotification'
+      },
+      activePage: {
+        type: HTMLElement,
+        observer: 'focusActivePage'
       }
     },
 
@@ -118,12 +124,18 @@
 
     attached() {
       this.listen(window, 'copy-to-clipboard', 'handleCopied');
-      this.listen(window, 'window-shown', 'focusInput');
+      this.listen(window, 'window-shown', 'focusActivePage');
     },
 
     detached() {
       this.unlisten(window, 'copy-to-clipboard', 'handleCopied');
-      this.unlisten(window, 'window-shown', 'focusInput');
+      this.unlisten(window, 'window-shown', 'focusActivePage');
+    },
+
+    focusActivePage() {
+      if (this.activePage && this.activePage.focusInput) {
+        this.activePage.focusInput();
+      }
     },
 
     handleCopied(evt) {

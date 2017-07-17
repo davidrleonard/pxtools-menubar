@@ -23,7 +23,7 @@
   ee.handleWindowShown = function handleWindowShown() {
     const winEvt = new CustomEvent('window-shown');
     window.dispatchEvent(winEvt);
-    console.log('Window shown, focusing input.');
+    console.log('Window shown');
   }
 
   ipcRenderer.on('after-show', ee.handleWindowShown);
