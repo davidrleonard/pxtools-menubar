@@ -1,7 +1,15 @@
+0.2.3
+===============
+* Update icon names to latest (again) and move aliases over
+* Update to use new segmented icon sets (small/medium/large)
+* Add icon filters to show/hide each set
+* Show all icons if there is no search text (except sets that are filtered)
+* Show all colors if there is no search text (with redesign filter applied)
+
 0.2.2
 ===============
 * Update icon names with latest, add aliases
-* Turn on redesigned colors by default 
+* Turn on redesigned colors by default
 
 0.2.1
 ===============
