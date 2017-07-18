@@ -1,3 +1,7 @@
+0.2.4
+================
+* Update icon names (...again)
+
 0.2.3
 ===============
 * Update icon names to latest (again) and move aliases over

@@ -1,806 +1,940 @@
 [
   {
-    "name": "add",
-    "keywords": "plus, new, create",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "alert",
-    "keywords": "notification, badge, communication, message",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "app-settings",
-    "keywords": "settings, administration, gearca",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "calculation",
-    "keywords": "calculate",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "camera",
-    "keywords": "image, picture, photo, video",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "chart",
-    "keywords": "chart, graph, analysis, measure",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "chevron",
-    "keywords": "down, next, forward, right",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "clock",
-    "keywords": "time, datetime",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "confirmed",
-    "keywords": "check-circle, check, circle, valid, selected",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "copy",
-    "keywords": "clipboard",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "delete",
-    "keywords": "trashcan, recycling, remove",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "desktop-computer",
-    "keywords": "pc, communication, device",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "document",
-    "keywords": "report, page",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "document-csv",
-    "keywords": "excel, csv, data, format, export, download, spreadsheet",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "document-pdf",
-    "keywords": "data, format, export, download",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "document-word",
-    "keywords": "data, format, export, download, docx",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "document-xls",
-    "keywords": "excel, office, data, format, export, download, spreadsheet",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "download",
-    "keywords": "export, save",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "edit",
-    "keywords": "pencil",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "failure",
-    "keywords": "alert, warning, invalid",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "filter",
-    "keywords": "funnel",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "flag",
-    "keywords": "mark",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "folder-closed",
-    "keywords": "file, directory",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "folder-open",
-    "keywords": "file",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "formula",
-    "keywords": "math, calculate",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "help",
-    "keywords": "question-circle, question, circle",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "image",
-    "keywords": "photo, camera",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "information",
-    "keywords": "information, help, support",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "link",
-    "keywords": "hyperlink, url, chain",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "location",
-    "keywords": "map-marker, map, marker, gis",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "locked",
-    "keywords": "private",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "map",
-    "keywords": "gis, location, fold",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "module-settings",
-    "keywords": "settings, administration",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "note",
-    "keywords": "reminder, writing, document",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "phone",
-    "keywords": "communications, telephone, call",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "reply",
-    "keywords": "respond, message, communication",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "save",
-    "keywords": "disk",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "share",
-    "keywords": "export, upload",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "tablet",
-    "keywords": "communication, device, application",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "unlink",
-    "keywords": "chain",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "unlocked",
-    "keywords": "",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "upload",
-    "keywords": "share, import",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "website",
-    "keywords": "application, screen, software",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "zoom",
-    "keywords": "in, map, gis, location",
-    "set": "small",
-    "prefix": "pxs"
-  },
-  {
-    "name": "back",
-    "keywords": "previous, left, chevron",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "close",
-    "keywords": "x, times",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "collapse",
-    "keywords": "reduce, minimize",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "down",
-    "keywords": "next, right, chevron",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "expand",
-    "keywords": "maximize",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "favorite",
-    "keywords": "star",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "generic-user",
-    "keywords": "user, app, profile, person",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "grid-view",
-    "keywords": "layout, view, style",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "hamburger",
-    "keywords": "bars, menu, slider",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "hierarchy",
-    "keywords": "relationship",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "home",
-    "keywords": "house",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "inbox-view",
-    "keywords": "layout, view, email",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "instance",
-    "keywords": "asset",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "list-view",
-    "keywords": "layout, view",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "log-out",
-    "keywords": "close, exit, quit, stop",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "menu",
-    "keywords": "ellipsis-v, kebab, dots, bullets",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "more",
-    "keywords": "ellipsis-h, more, dots",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "new-window",
-    "keywords": "app, view, open",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "next",
-    "keywords": "arrow, right, chevron",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "notification",
-    "keywords": "bell, alert",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "open-context",
-    "keywords": "launch, share, view, select",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "pause",
-    "keywords": "media, music, video",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "play",
-    "keywords": "media, music, video",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "reload",
-    "keywords": "refresh",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "search",
-    "keywords": "magnifying glass, find",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "stop",
-    "keywords": "media, music, video",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "tile-view",
-    "keywords": "layout, view, grid",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "tree",
-    "keywords": "layout, view, hierarchy",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "up",
-    "keywords": "arrow, up, chevron",
-    "set": "medium",
-    "prefix": "pxm"
-  },
-  {
-    "name": "administration",
-    "keywords": "cog, wrench",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "airplane",
-    "keywords": "aircraft, plane, aviation",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "airplane-engine",
-    "keywords": "aircraft, plane, aviation, turbine",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "airport",
-    "keywords": "aviation",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "alerts",
-    "keywords": "exclamation, triangle",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "analysis",
-    "keywords": "graph, chart, area",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "analytics",
-    "keywords": "graph, charts",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "asset",
-    "keywords": "",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "attribute",
-    "keywords": "",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "automobile",
-    "keywords": "car, transportation, auto, truck, drive",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "boiler",
-    "keywords": "power",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "bug",
-    "keywords": "insect",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "calendar",
-    "keywords": "date",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "cases",
-    "keywords": "briefcase",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "catalog",
-    "keywords": "book, list",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
     "name": "chat",
     "keywords": "comments, discussion, profile, talk",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "class",
-    "keywords": "hexagon",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
     "name": "comment",
     "keywords": "communication, chat",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "condenser",
-    "keywords": "power, enegry, stream, condensor",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "cooling-tower",
-    "keywords": "power, energy, steam",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "dashboard",
-    "keywords": "gauge, instrument, kpi",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "data-sources",
-    "keywords": "upload, edge, machien",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "deployments",
-    "keywords": "rocket, space",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "dev-ops",
-    "keywords": "hexagon, wrench",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "digital-twin",
-    "keywords": "hexagon, cloud",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "edge-box",
-    "keywords": "machine",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
     "name": "email",
     "keywords": "communication, message",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "fleet",
-    "keywords": "asset",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "gas-turbine",
-    "keywords": "power, energy",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "hrsg",
-    "keywords": "power, energy",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "light-bulb",
-    "keywords": "energy, power, current",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "line",
-    "keywords": "factory, assembly",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "line-og",
-    "keywords": "",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "locomotive",
-    "keywords": "transportation, rail, train, engine",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "log",
-    "keywords": "report, sheet",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "machine",
-    "keywords": "turbine, fan, asset",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "manufacturing-line",
-    "keywords": "factory, assembly, line",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
     "name": "message",
     "keywords": "communication",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "microservice",
-    "keywords": "hexagon, code",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "orchestration",
-    "keywords": "analytics",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "orders",
-    "keywords": "sales, report",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
     "name": "phone",
     "keywords": "communications, telephone, call",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "pipeline",
-    "keywords": "oil, gas, energy, flow, process, diagram",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "plant",
-    "keywords": "power, energy, oil, gas, factory, manufacturing",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "predix-box",
-    "keywords": "machine, computer, server, communication",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "product",
-    "keywords": "box, shipping, manufacturing",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "products",
-    "keywords": "box, hipping, manufacturing",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "rail-yard",
-    "keywords": "transportation, car, train",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "routes",
-    "keywords": "usb, flow, diagram",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
     "name": "sms",
     "keywords": "communication, phone, text, message, mobile",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "communication",
+    "prefix": "px-com",
+    "size": "32"
   },
   {
-    "name": "solar-panel",
-    "keywords": "energy, power, renewable",
-    "set": "large",
-    "prefix": "pxl"
+    "name": "chart",
+    "keywords": "chart, graph, analysis, measure",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "document",
+    "keywords": "report, page",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "document-csv",
+    "keywords": "excel, csv, data, format, export, download, spreadsheet",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "document-pdf",
+    "keywords": "data, format, export, download",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "document-word",
+    "keywords": "data, format, export, download, docx",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "document-xls",
+    "keywords": "excel, office, data, format, export, download, spreadsheet",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "image",
+    "keywords": "photo, camera",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "note",
+    "keywords": "reminder, writing, document",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "website",
+    "keywords": "application, screen, software",
+    "set": "document",
+    "prefix": "px-doc",
+    "size": "16"
+  },
+  {
+    "name": "administration",
+    "keywords": "cog, wrench",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "alerts",
+    "keywords": "exclamation, triangle",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "analysis",
+    "keywords": "graph, chart, area",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "analytics",
+    "keywords": "graph, charts",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "asset",
+    "keywords": "apm",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "attribute",
+    "keywords": "",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "bug",
+    "keywords": "insect",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "calendar",
+    "keywords": "date",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "cases",
+    "keywords": "briefcase",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "catalog",
+    "keywords": "book, list",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "dashboard",
+    "keywords": "gauge, instrument, kpi",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "data-sources",
+    "keywords": "upload, edge, machien",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "deployments",
+    "keywords": "rocket, space",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "dev-ops",
+    "keywords": "hexagon, wrench",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "digital-twin",
+    "keywords": "hexagon, cloud",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "log",
+    "keywords": "report, sheet",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "microservice",
+    "keywords": "hexagon, code",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "orchestration",
+    "keywords": "analytics",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "orders",
+    "keywords": "sales, report",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "pipeline",
+    "keywords": "oil, gas, energy, flow, process, diagram",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "products",
+    "keywords": "box, hipping, manufacturing",
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "spaces",
     "keywords": "io",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "steam-turbine",
-    "keywords": "power, energy",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "tag",
     "keywords": "apm, sensor",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "tag-group",
     "keywords": "apm, sensor, group",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "templates",
     "keywords": "reports, asset",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "train",
-    "keywords": "locomotive, transportation, rail",
-    "set": "large",
-    "prefix": "pxl"
-  },
-  {
-    "name": "truck",
-    "keywords": "shipping, transportation, manufacturing",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "users",
     "keywords": "profile, people, group",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
   },
   {
     "name": "versions",
     "keywords": "asset",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "feature",
+    "prefix": "px-fea",
+    "size": "32"
+  },
+  {
+    "name": "back",
+    "keywords": "previous, left, chevron",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "close",
+    "keywords": "x, times",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "collapse",
+    "keywords": "reduce, minimize",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "down",
+    "keywords": "next, right, chevron",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "expand",
+    "keywords": "maximize",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "favorite",
+    "keywords": "star",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "generic-user",
+    "keywords": "user, app, profile, person",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "grid-view",
+    "keywords": "layout, view, style",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "hamburger",
+    "keywords": "bars, menu, slider",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "hierarchy",
+    "keywords": "relationship",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "home",
+    "keywords": "house",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "inbox-view",
+    "keywords": "layout, view, email",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "instance",
+    "keywords": "asset",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "list-view",
+    "keywords": "layout, view",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "log-out",
+    "keywords": "close, exit, quit, stop",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "menu",
+    "keywords": "ellipsis-v, kebab, dots, bullets",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "more",
+    "keywords": "ellipsis-h, more, dots",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "new-window",
+    "keywords": "app, view, open",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "next",
+    "keywords": "arrow, right, chevron",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "notification",
+    "keywords": "bell, alert",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "open-context",
+    "keywords": "launch, share, view, select",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "pause",
+    "keywords": "media, music, video",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "play",
+    "keywords": "media, music, video",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "reload",
+    "keywords": "refresh",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "search",
+    "keywords": "magnifying glass, find",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "stop",
+    "keywords": "media, music, video",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "tile-view",
+    "keywords": "layout, view, grid",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "tree",
+    "keywords": "layout, view, hierarchy",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "up",
+    "keywords": "arrow, up, chevron",
+    "set": "navigation",
+    "prefix": "px-nav",
+    "size": "22"
+  },
+  {
+    "name": "airplane",
+    "keywords": "aircraft, plane, aviation",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "airplane-engine",
+    "keywords": "aircraft, plane, aviation, turbine",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "airport",
+    "keywords": "aviation",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "automobile",
+    "keywords": "car, transportation, auto, truck, drive",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "boiler",
+    "keywords": "power",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "class",
+    "keywords": "hexagon",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "condenser",
+    "keywords": "power, enegry, stream, condensor",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "cooling-tower",
+    "keywords": "power, energy, steam",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "edge-box",
+    "keywords": "machine",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "fleet",
+    "keywords": "asset",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "gas-turbine",
+    "keywords": "power, energy",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "hrsg",
+    "keywords": "power, energy",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "light-bulb",
+    "keywords": "energy, power, current",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "line",
+    "keywords": "factory, assembly",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "line-og",
+    "keywords": "",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "locomotive",
+    "keywords": "transportation, rail, train, engine",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "machine",
+    "keywords": "turbine, fan, asset",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "manufacturing-line",
+    "keywords": "factory, assembly, line",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "plant",
+    "keywords": "power, energy, oil, gas, factory, manufacturing",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "predix-box",
+    "keywords": "machine, computer, server, communication",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "product",
+    "keywords": "box, shipping, manufacturing",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "rail-yard",
+    "keywords": "transportation, car, train",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "routes",
+    "keywords": "usb, flow, diagram",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "solar-panel",
+    "keywords": "energy, power, renewable",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "steam-turbine",
+    "keywords": "power, energy",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "train",
+    "keywords": "locomotive, transportation, rail",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "truck",
+    "keywords": "shipping, transportation, manufacturing",
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
   },
   {
     "name": "wind-turbine",
     "keywords": "power, energy, renewable",
-    "set": "large",
-    "prefix": "pxl"
+    "set": "object",
+    "prefix": "px-obj",
+    "size": "32"
+  },
+  {
+    "name": "add",
+    "keywords": "plus, new, create",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "alert",
+    "keywords": "notification, badge, communication, message",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "app-settings",
+    "keywords": "settings, administration, gearca",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "calculation",
+    "keywords": "calculate",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "camera",
+    "keywords": "image, picture, photo, video",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "chevron",
+    "keywords": "down, next, forward, right",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "clock",
+    "keywords": "time, datetime",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "confirmed",
+    "keywords": "check-circle, check, circle, valid, selected",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "copy",
+    "keywords": "clipboard",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "delete",
+    "keywords": "trashcan, recycling, remove",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "desktop-computer",
+    "keywords": "pc, communication, device",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "download",
+    "keywords": "export, save",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "edit",
+    "keywords": "pencil",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "failure",
+    "keywords": "alert, warning, invalid",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "filter",
+    "keywords": "funnel",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "flag",
+    "keywords": "mark",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "folder-closed",
+    "keywords": "file, directory",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "folder-open",
+    "keywords": "file",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "formula",
+    "keywords": "math, calculate",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "help",
+    "keywords": "question-circle, question, circle",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "information",
+    "keywords": "information, help, support",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "link",
+    "keywords": "hyperlink, url, chain",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "location",
+    "keywords": "map-marker, map, marker, gis",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "locked",
+    "keywords": "private",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "map",
+    "keywords": "gis, location, fold",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "module-settings",
+    "keywords": "settings, administration",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "phone",
+    "keywords": "communications, telephone, call",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "reply",
+    "keywords": "respond, message, communication",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "save",
+    "keywords": "disk",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "share",
+    "keywords": "export, upload",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "tablet",
+    "keywords": "communication, device, application",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "unlink",
+    "keywords": "chain",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "unlocked",
+    "keywords": "lock",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "upload",
+    "keywords": "share, import",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
+  },
+  {
+    "name": "zoom",
+    "keywords": "in, map, gis, location",
+    "set": "utility",
+    "prefix": "px-utl",
+    "size": "16"
   }
 ]

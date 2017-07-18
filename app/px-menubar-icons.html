@@ -11,15 +11,6 @@
       .icons__search__input {
         font-size: 1.2rem;
       }
-      .icons__search__toggles {
-        margin-top: .75rem;
-      }
-      .icons__search__toggles span {
-        position: relative;
-        top: -0.15rem;
-        padding-left: .5rem;
-        padding-right: .5rem;
-      }
 
       .icons__results {
         margin-top: .75rem;
@@ -32,17 +23,29 @@
         --iron-icon-stroke-color: currentcolor;
         --iron-icon-fill-color: transparent;
       }
-      px-menubar-icons-result[size="small"] {
+      px-menubar-icons-result[type="communication"] {
+        --iron-icon-width: 32px;
+        --iron-icon-height: 32px;
+      }
+      px-menubar-icons-result[type="document"] {
         --iron-icon-width: 16px;
         --iron-icon-height: 16px;
       }
-      px-menubar-icons-result[size="medium"] {
+      px-menubar-icons-result[type="feature"] {
+        --iron-icon-width: 32px;
+        --iron-icon-height: 32px;
+      }
+      px-menubar-icons-result[type="navigation"] {
         --iron-icon-width: 22px;
         --iron-icon-height: 22px;
       }
-      px-menubar-icons-result[size="large"] {
+      px-menubar-icons-result[type="object"] {
         --iron-icon-width: 32px;
         --iron-icon-height: 32px;
+      }
+      px-menubar-icons-result[type="utility"] {
+        --iron-icon-width: 16px;
+        --iron-icon-height: 16px;
       }
     </style>
     <iron-ajax url="../data/icons.json" last-response="{{rawList}}" auto></iron-ajax>
@@ -60,20 +63,12 @@
           type="text"
           placeholder="home, dashboards, alerts"
           value="{{searchText::input}}">
-      <div class="icons__search__toggles">
-        <px-toggle size="small" checked="{{searchSmall}}"></px-toggle>
-        <span>Small</span>
-        <px-toggle size="small" checked="{{searchMedium}}"></px-toggle>
-        <span>Medium</span>
-        <px-toggle size="small" checked="{{searchLarge}}"></px-toggle>
-        <span>Large</span>
-      </div>
     </div>
 
     <!-- Results -->
     <div class="icons__results">
       <template is="dom-repeat" items="{{filteredList}}">
-        <px-menubar-icons-result name="{{item.prefix}}:{{item.name}}" size$="{{item.set}}"></px-menubar-icons-result>
+        <px-menubar-icons-result name="{{item.prefix}}:{{item.name}}" type$="{{item.set}}"></px-menubar-icons-result>
       </template>
     </div>
   </template>
@@ -91,19 +86,20 @@
       },
       filteredList: {
         type: Array,
-        computed: 'getFilteredList(rawList, searchText, searchSmall, searchMedium, searchLarge)'
+        computed: 'getFilteredList(rawList, searchText)'
       },
-      searchSmall: {
-        type: Boolean,
-        value: true
-      },
-      searchMedium: {
-        type: Boolean,
-        value: true
-      },
-      searchLarge: {
-        type: Boolean,
-        value: true
+      iconSets: {
+        type: Array,
+        value: function() {
+          return [
+            { set: 'communication', size: '32' },
+            { set: 'document',      size: '16' },
+            { set: 'feature',       size: '32' },
+            { set: 'navigation',    size: '22' },
+            { set: 'object',        size: '32' },
+            { set: 'utility',       size: '16' }
+          ]
+        }
       }
     },
 
@@ -118,7 +114,8 @@
         minMatchCharLength: 1,
         keys: [
           "name",
-          "keywords"
+          "keywords",
+          "prefix"
         ]
       }
     },
@@ -145,18 +142,16 @@
     },
 
     getFilteredList(rawList, searchText, searchSmall, searchMedium, searchLarge) {
-      const filteredItems = rawList.filter(item => {
-        if (searchSmall && item.set === 'small') return true;
-        if (searchMedium && item.set === 'medium') return true;
-        if (searchLarge && item.set === 'large') return true;
-        return false;
-      });
-      if (searchText === "") {
-        return filteredItems;
-      }
-      else {
-        return this.searchItems(filteredItems, searchText);
-      }
+      const filteredItems = (searchText === "") ? rawList.slice(0) : this.searchItems(rawList, searchText);
+      return filteredItems;
+    },
+
+    getIconSets(icons, sets) {
+      return sets.reduce((acc,s) => {
+        let set = Object.assign({}, s);
+        set.icons = icons.filter(i => i.set === set.set);
+        acc = acc.concat([set]);
+      }, []);
     }
   });
 </script>
