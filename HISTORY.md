@@ -1,3 +1,7 @@
+0.2.5
+================
+* Update to strict mode in inline JavaScript, fixes icon page rendering bug
+
 0.2.4
 ================
 * Update icon names (...again)
