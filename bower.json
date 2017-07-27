@@ -26,7 +26,9 @@
   },
   "devDependencies": {
     "px-starter-kit-design": "^1.0.0",
-    "px-forms-design": "^2.0.0"
+    "px-forms-design": "^2.0.0",
+    "px-headings-design": "^1.0.0",
+    "px-actionable-design": "^2.0.0"
   },
   "resolutions": {
     "webcomponentsjs": "^0.7.24"

@@ -10,6 +10,7 @@
 <!-- Load app elements -->
 <link rel="import" href="px-menubar-colors.html">
 <link rel="import" href="px-menubar-icons.html">
+<link rel="import" href="px-menubar-text.html">
 
 <!-- Import style modules -->
 <link rel="import" href="../css/app-styles.html"/>
@@ -83,6 +84,7 @@
           selected-attribute="selected">
         <a class="app__header__tab" name="colors">Colors</a>
         <a class="app__header__tab" name="icons">Icons</a>
+        <a class="app__header__tab" name="text">Text</a>
         <a class="app__header__tab app__header__tab--quit" on-tap="handleQuit">Quit</a>
       </iron-selector>
 
@@ -94,6 +96,7 @@
             selected-item="{{activePage}}">
           <px-menubar-colors name="colors"></px-menubar-colors>
           <px-menubar-icons name="icons"></px-menubar-icons>
+          <px-menubar-text name="text"></px-menubar-text>
         </iron-pages>
       </div>
 
