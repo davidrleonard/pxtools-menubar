@@ -15,6 +15,17 @@ You'll need node and bower to develop.
 3. Run `npm run-script dev` to serve the app and develop it in the browser
 4. Run `npm run-script start` to serve the app in the menubar and test how it works
 
+#### Adding Icons
+To add icons, you just need to run a script which will extract all icons from px-icon-set and create the icons.json data file.
+
+1. Have node modules and bower components installed.
+2. Make sure you have Node.js 7.6+
+  * If you're on 7.x run with the flag node --harmony-async-await
+  * If you're on 8.x no flag
+3. If px-icon-set has a new group (e.g. Feature, Object, etc), you must add it to scripts/extract-icons.js `dirs` object.
+4. Provide optional keywords in scripts/keywords.json for each new icon.
+5. `node scripts/extract-icons.js`
+
 ### Distributing
 
 1. Run `npm run-script build` to build the app.

@@ -23,29 +23,33 @@
         --iron-icon-stroke-color: currentcolor;
         --iron-icon-fill-color: transparent;
       }
-      px-menubar-icons-result[type="communication"] {
-        --iron-icon-width: 32px;
-        --iron-icon-height: 32px;
-      }
       px-menubar-icons-result[type="document"] {
         --iron-icon-width: 16px;
         --iron-icon-height: 16px;
       }
-      px-menubar-icons-result[type="feature"] {
-        --iron-icon-width: 32px;
-        --iron-icon-height: 32px;
+      px-menubar-icons-result[type="utility"] {
+        --iron-icon-width: 16px;
+        --iron-icon-height: 16px;
       }
       px-menubar-icons-result[type="navigation"] {
         --iron-icon-width: 22px;
         --iron-icon-height: 22px;
       }
+      px-menubar-icons-result[type="communication"] {
+        --iron-icon-width: 32px;
+        --iron-icon-height: 32px;
+      }
+      px-menubar-icons-result[type="feature"] {
+        --iron-icon-width: 32px;
+        --iron-icon-height: 32px;
+      }
       px-menubar-icons-result[type="object"] {
         --iron-icon-width: 32px;
         --iron-icon-height: 32px;
       }
-      px-menubar-icons-result[type="utility"] {
-        --iron-icon-width: 16px;
-        --iron-icon-height: 16px;
+      px-menubar-icons-result[type="visualizations"] {
+        --iron-icon-width: 22px;
+        --iron-icon-height: 22px;
       }
     </style>
     <iron-ajax url="../data/icons.json" last-response="{{rawList}}" auto></iron-ajax>
@@ -75,7 +79,7 @@
 </dom-module>
 <script>
   'use strict';
-  
+
   Polymer({
     is: 'px-menubar-icons',
     properties: {
@@ -94,12 +98,13 @@
         type: Array,
         value: function() {
           return [
-            { set: 'communication', size: '32' },
             { set: 'document',      size: '16' },
-            { set: 'feature',       size: '32' },
+            { set: 'utility',       size: '16' },
             { set: 'navigation',    size: '22' },
+            { set: 'communication', size: '32' },
+            { set: 'feature',       size: '32' },
             { set: 'object',        size: '32' },
-            { set: 'utility',       size: '16' }
+            { set: 'visualization', size: '22' }
           ]
         }
       }
