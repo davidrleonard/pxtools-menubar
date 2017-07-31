@@ -92,7 +92,7 @@ function addAllToJSONData(data, names, keywords, set, prefix, size, keywordKeys)
 
     if(!k) { missing.push(name); }
     else {
-      // protecting against the case that we have two icons with the same name
+      // `if` protects against the case that we have two icons with the same name
       // this is entirely likely since they might have different prefixes
       // we dont really care to track it, just dont want to error.
       const i = keywordKeys.indexOf(name);
