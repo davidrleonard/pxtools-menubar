@@ -1,0 +1,51 @@
+<!-- Load dependencies -->
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../lib/electron-event-helpers.html">
+
+<link rel="import" href="../css/app-styles.html"/>
+
+<dom-module id="px-menubar-text-result">
+  <template>
+    <style include="app-styles">
+      :host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+      }
+      .result-text__name {
+        padding: 10px;
+        flex: 1;
+      }
+      .clickable {
+        cursor: pointer;
+      }
+    </style>
+
+    <span class$="clickable result-text__name {{class}}" on-tap="copyClass">{{name}}</span>
+    <span class="result-text__repo">{{repo}}</span>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: 'px-menubar-text-result',
+    properties: {
+      name: String,
+      class: String,
+      searchText: String
+    },
+
+    listeners: {
+      'tap' : '_handleSelfTapped'
+    },
+
+    copyClass() {
+      electronEvent.copyToClipboard(this.class);
+    },
+
+    _handleSelfTapped(evt) {
+      // debugger;
+    }
+  });
+</script>

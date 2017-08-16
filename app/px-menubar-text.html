@@ -1,0 +1,105 @@
+<!-- Load dependencies -->
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="px-menubar-text-result.html"/>
+
+<!-- Import style modules -->
+<link rel="import" href="../css/app-styles.html"/>
+
+<dom-module id="px-menubar-text">
+  <template>
+    <style include="app-styles">
+      .text__search__input {
+        font-size: 1.2rem;
+      }
+      .text__search__redesigned {
+        margin-top: .75rem;
+      }
+    </style>
+    <iron-ajax url="../data/text.json" last-response="{{rawList}}" auto></iron-ajax>
+
+    <!-- Intro -->
+    <div class="text__intro">
+      <h3>Search for text styles</h3>
+    </div>
+
+    <!-- Search -->
+    <div class="text__search">
+      <input
+          id="search"
+          class="text-input text__search__input"
+          type="text"
+          placeholder="alpha or header or link"
+          value="{{searchText::input}}">
+    </div>
+
+    <!-- Results -->
+    <div class="text__results">
+      <template is="dom-repeat" items="{{filteredList}}">
+        <px-menubar-text-result name="{{item.name}}" class="{{item.class}}" repo="{{item.repo}}" search-text="{{searchText}}"></px-menubar-text-result>
+      </template>
+    </div>
+  </template>
+</dom-module>
+<script>
+  'use strict';
+  
+  Polymer({
+    is: 'px-menubar-text',
+    properties: {
+      searchText: {
+        type: String,
+        value: ''
+      },
+      rawList: {
+        type: Array
+      },
+      filteredList: {
+        type: Array,
+        computed: 'getFilteredList(rawList, searchText)'
+      }
+    },
+
+    get fuseOptions() {
+      return {
+        shouldSort: true,
+        tokenize: true,
+        threshold: 0.6,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: [
+          "name",
+          "keywords",
+          "class"
+        ]
+      }
+    },
+
+    created() {
+      this.search = new Fuse()
+    },
+
+    attached() {
+      this.focusInput();
+    },
+
+    focusInput() {
+      this.$.search.focus();
+    },
+
+    isEmpty(text) {
+      return text.length === 0;
+    },
+
+    searchItems(items, str) {
+      const fuse = new Fuse(items, this.fuseOptions);
+      return fuse.search(str);
+    },
+
+    getFilteredList(rawList, searchText) {
+      const filteredItems = (searchText === "") ? rawList.slice(0) : this.searchItems(rawList, searchText);
+      return filteredItems;
+    }
+  });
+</script>

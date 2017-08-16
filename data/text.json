@@ -1,0 +1,146 @@
+[
+  {
+    "name": "alpha",
+    "keywords": "heading, header, 75px",
+    "class": "alpha",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "beta",
+    "keywords": "heading, header, 60px",
+    "class": "beta",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "gamma",
+    "keywords": "heading, header, 45px",
+    "class": "gamma",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "delta",
+    "keywords": "heading, header, 30px",
+    "class": "delta",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "epsilon",
+    "keywords": "heading, header, 20px",
+    "class": "epsilon",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "zeta",
+    "keywords": "heading, header, 12px",
+    "class": "zeta",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "page heading",
+    "keywords": "heading, header, 30px",
+    "class": "heading--page",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "section heading",
+    "keywords": "heading, header, 20px, caps",
+    "class": "heading--section",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "sub-section heading",
+    "keywords": "heading, header, 15px, caps, background",
+    "class": "heading--subsection",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "label",
+    "keywords": "heading, header, key, 12px, caps",
+    "class": "label",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "value",
+    "keywords": "heading, header, 15px",
+    "class": "value",
+    "repo": "px-headings-design"
+  },
+  {
+    "name": "actionable blue",
+    "keywords": "link",
+    "class": "actionable",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "actionable plain",
+    "keywords": "link",
+    "class": "actionable--action",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "actionable select",
+    "keywords": "link, select",
+    "class": "actionable--select",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "actionable small",
+    "keywords": "link, size",
+    "class": "actionable--small",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "actionable large",
+    "keywords": "link, size",
+    "class": "actionable--large",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "actionable huge",
+    "keywords": "link, size",
+    "class": "actionable--huge",
+    "repo": "px-actionable-design"
+  },
+  {
+    "name": "left",
+    "keywords": "alignment",
+    "class": "text--left",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "center",
+    "keywords": "alignment",
+    "class": "text--center",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "right",
+    "keywords": "alignment",
+    "class": "text--right",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "informative",
+    "keywords": "cursor, help, info",
+    "class": "informative",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "pointer",
+    "keywords": "cursor, actionable, link",
+    "class": "pointer",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "muted",
+    "keywords": "style, color, gray, emphasis",
+    "class": "muted",
+    "repo": "px-helpers-design"
+  },
+  {
+    "name": "caps",
+    "keywords": "style, capitalization, uppercase",
+    "class": "caps",
+    "repo": "px-helpers-design"
+  }
+]

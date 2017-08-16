@@ -14,10 +14,12 @@ $inuit-webfont-path : '//fonts/';
 @import "px-viewport-design/_base.viewport.scss";
 $inuit-enable-input--large : true;
 @import 'px-forms-design/_base.forms.scss';
+@import 'px-headings-design/_base.headings.scss';
 
 // Meta
 
 // Objects
+@import "px-actionable-design/_objects.actionable.scss";
 
 // Component
 :host {
