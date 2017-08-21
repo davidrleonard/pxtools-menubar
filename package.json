@@ -6,6 +6,7 @@
     "menubar": "*"
   },
   "devDependencies": {
+    "electron": "^1.7.5",
     "electron-packager": "^5.1.0",
     "electron-prebuilt": "^0.36.0",
     "gulp": "^3.9.1",
@@ -22,7 +23,7 @@
   },
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager . 'Predix UI Menubar' --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
+    "build": "electron-packager . 'Predix UI Menubar' --platform=darwin --arch=x64 --version=1.7.5 --icon=Icon.icns",
     "start": "electron .",
     "dev": "npm run-script watch:sass & polymer serve",
     "watch:sass": "watch 'gulp sass' sass"

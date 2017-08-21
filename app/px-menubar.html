@@ -4,7 +4,10 @@
 <link rel="import" href="../bower_components/px-toggle/px-toggle.html"/>
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html"/>
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html"/>
+<link rel="import" href="../bower_components/px-icon-set/px-icon-set.html"/>
+<link rel="import" href="../bower_components/px-icon-set/px-icon.html"/>
 <link rel="import" href="../lib/electron-event-helpers.html">
+<link rel="import" href="../lib/electron-app-settings.html">
 <link rel="import" href="../lib/fuse-import.html"/>
 
 <!-- Load app elements -->
@@ -39,22 +42,26 @@
         background-color: var(--pxm-header-background);
         box-shadow: var(--pxm-header-box-shadow);
       }
-      .app__header__tab {
+      .app__header__selectors {
+        display: flex;
+        flex: 1 1 auto;
+      }
+      .app__header__selectors__tab {
         display: block;
         padding: .75rem;
         cursor: pointer;
         text-transform: uppercase;
         color: var(--pxm-header-font-color);
       }
-      .app__header__tab:hover {
+      .app__header__selectors__tab:hover {
         color: var(--pxm-header-font-color);
         background-color: var(--pxm-header-background--hover);
       }
-      .app__header__tab[selected] {
+      .app__header__selectors__tab[selected] {
         background-color: var(--pxm-header-background--selected);
         position: relative;
       }
-      .app__header__tab[selected]::before {
+      .app__header__selectors__tab[selected]::before {
         content: '';
         position: absolute;
         top: 0;
@@ -64,8 +71,33 @@
         height: 2px;
         background-color: var(--pxm-header-background--selected-stripe);
       }
-      .app__header__tab--quit {
-        justify-self: flex-end;
+      .app__header__icons {
+        display: flex;
+      }
+      .app__header__icons__tab {
+        display: flex;
+        align-items: center;
+        padding: 0 .5rem;
+        cursor: pointer;
+        color: var(--pxm-header-font-color);
+      }
+      .app__header__icons__tab:hover {
+        color: var(--pxm-header-font-color);
+        background-color: var(--pxm-header-background--hover);
+      }
+
+      .header-icon {
+        --iron-icon-width: 16px;
+        --iron-icon-height: 16px;
+        display: flex;
+      }
+      .header-icon--pin {
+        --iron-icon-width: 20px;
+        --iron-icon-height: 20px;
+      }
+      .app__header__icons__tab--active,
+      .app__header__icons__tab--active:hover {
+        background-color: var(--pxm-header-active-icon-color);
       }
 
       .app__main {
@@ -76,17 +108,26 @@
 
     <section class="app">
       <!-- Header -->
-      <iron-selector
-          class="app__header"
-          attr-for-selected="name"
-          selected="{{active}}"
-          fallback-selection="colors"
-          selected-attribute="selected">
-        <a class="app__header__tab" name="colors">Colors</a>
-        <a class="app__header__tab" name="icons">Icons</a>
-        <a class="app__header__tab" name="text">Text</a>
-        <a class="app__header__tab app__header__tab--quit" on-tap="handleQuit">Quit</a>
-      </iron-selector>
+      <div class="app__header">
+        <iron-selector
+            class="app__header__selectors"
+            attr-for-selected="name"
+            selected="{{active}}"
+            fallback-selection="colors"
+            selected-attribute="selected">
+          <a class="app__header__selectors__tab" name="colors">Colors</a>
+          <a class="app__header__selectors__tab" name="icons">Icons</a>
+          <a class="app__header__selectors__tab" name="text">Text</a>
+        </iron-selector>
+        <div class="app__header__icons">
+          <div class$="app__header__icons__tab [[_getIconActiveClass(pinned)]]" on-tap="_togglePinned">
+            <px-icon class="header-icon header-icon--pin" icon="px-vis:pin"></px-icon>
+          </div>
+          <div class="app__header__icons__tab" on-tap="_handleQuit">
+            <px-icon class="header-icon" icon="px-nav:log-out"></px-icon>
+          </div>
+        </div>
+      </div>
 
       <div class="app__main">
         <iron-pages
@@ -118,6 +159,12 @@
       activePage: {
         type: HTMLElement,
         observer: 'focusActivePage'
+      },
+      pinned: {
+        type: Boolean,
+        value: function() {
+          return window.appSettings.get('pinned');
+        }
       }
     },
 
@@ -147,7 +194,12 @@
       }
     },
 
-    handleQuit(evt) {
+    _togglePinned() {
+      this.pinned = !this.pinned;
+      electronEvent.updateSettings({pinned: this.pinned});
+    },
+
+    _handleQuit(evt) {
       electronEvent.quit();
     },
 
@@ -162,6 +214,13 @@
           this._notificationVisible = false;
         }, 3000);
       }
+    },
+
+    _getIconActiveClass(active) {
+      if (active) {
+        return 'app__header__icons__tab--active';
+      }
+      return '';
     }
   });
 </script>

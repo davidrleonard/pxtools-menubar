@@ -1,6 +1,6 @@
 <script>
   'use strict';
-  
+
   console.log("Loaded.")
   const ipcRenderer = require('electron').ipcRenderer;
   const ee = window.electronEvent = {};
@@ -20,6 +20,10 @@
 
   ee.quit = function quit() {
     ee.sendEvent('quit');
+  }
+
+  ee.updateSettings = function updateSettings(settings) {
+    ee.sendEvent('update-settings', settings);
   }
 
   ee.handleWindowShown = function handleWindowShown() {

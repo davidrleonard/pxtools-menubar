@@ -1,13 +1,14 @@
 'use strict';
 
 const electron = require('electron');
-const ipcMain = electron.ipcMain;
-const clipboard = electron.clipboard;
-const Menu = electron.Menu;
+const {ipcMain, clipboard, Menu} = electron;
 const menubar = require('menubar');
+const Store = require('./store');
+const settings = new Store('settings');
 
 const mb = menubar({
-  'node-integration' : true
+  'node-integration' : true,
+  alwaysOnTop: true
 });
 
 const app = mb.app;
@@ -51,6 +52,13 @@ mb.on('after-show', function afterShow() {
   html.send('after-show');
 });
 
+mb.on('focus-lost', function focusLost() {
+  const pinned = settings.get('pinned', false);
+  if (!pinned) {
+    mb.hideWindow();;
+  }
+});
+
 ipcMain.on('copy-to-clipboard', (evt, detail) => {
   console.log(`Copying the following to clipboard: ${detail}`);
   clipboard.writeText(detail);
@@ -59,4 +67,12 @@ ipcMain.on('copy-to-clipboard', (evt, detail) => {
 ipcMain.on('quit', (evt, detail) => {
   console.log(`Quit requested. Quitting now.`);
   mb.app.quit();
+});
+
+ipcMain.on('update-settings', (evt, updatedSettings) => {
+  console.log(`Updating settings: ${JSON.stringify(updatedSettings, null, '  ')}`);
+  let keys = Object.keys(updatedSettings);
+  for (let key of keys) {
+    settings.set(key, updatedSettings[key]);
+  }
 });
