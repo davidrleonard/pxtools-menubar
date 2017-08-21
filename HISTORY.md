@@ -1,3 +1,12 @@
+0.3.0
+================
+* Adds the typography tab, which provides quick access to font size class names
+* Adds the pin setting. Users can pin the app to keep it open when interacting
+  with a different window.
+* Moves quit tab to an icon
+* Bumps electron to 1.7.5 to support new ES6 language features
+* Various small bugfixes
+
 0.2.5
 ================
 * Update to strict mode in inline JavaScript, fixes icon page rendering bug
